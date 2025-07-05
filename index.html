@@ -645,11 +645,11 @@
                 const name = this.isJapanese ? scheme.name_ja : scheme.name;
                 const typeLine = this.isJapanese ? scheme.type_line_ja : scheme.type_line;
                 const oracleText = this.isJapanese ? scheme.oracle_text_ja : scheme.oracle_text;
-                const imageUrl = this.isJapanese ? scheme.image_uris_ja.normal : '#';
+                const imageUrl = this.isJapanese ? scheme.image_uris_ja.normal : scheme.image_uris_en.normal;
 
                 cardDisplay.innerHTML = `
                     <div class="card">
-                        ${this.isJapanese ? `<img src="${imageUrl}" alt="${name}" class="card-image" onerror="this.style.display='none'">` : ''}
+                        <img src="${imageUrl}" alt="${name}" class="card-image" onerror="this.style.display='none'">
                         <div class="card-title">${name}</div>
                         <div class="card-type">${typeLine}</div>
                         <div class="card-text">${oracleText.replace(/\n/g, '<br>')}</div>
@@ -782,10 +782,15 @@
                 cardsToShow.forEach((card, index) => {
                     const cardElement = document.createElement('div');
                     cardElement.className = 'card-item';
+                    
+                    const name = this.isJapanese ? card.name_ja : card.name;
+                    const typeLine = this.isJapanese ? card.type_line_ja : card.type_line;
+                    const imageUrl = this.isJapanese ? card.image_uris_ja.normal : card.image_uris_en.normal;
+                    
                     cardElement.innerHTML = `
-                        <img src="${card.image_uris_ja.normal}" alt="${card.name_ja}" loading="lazy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDMwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjMjIyIi8+Cjx0ZXh0IHg9IjE1MCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOTk5IiBmb250LXNpemU9IjE2Ij7jgqvjg7zjg4njgYzloqXjgJXjgozjgb7jgZvjgpM8L3RleHQ+Cjwvc3ZnPgo='">
-                        <div class="card-item-title">${card.name_ja}</div>
-                        <div class="card-item-type">${card.type_line_ja}</div>
+                        <img src="${imageUrl}" alt="${name}" loading="lazy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDMwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjMjIyIi8+Cjx0ZXh0IHg9IjE1MCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOTk5IiBmb250LXNpemU9IjE2Ij7jgqvjg7zjg4njgYzloqXjgJXjgozjgb7jgZvjgpM8L3RleHQ+Cjwvc3ZnPgo='">
+                        <div class="card-item-title">${name}</div>
+                        <div class="card-item-type">${typeLine}</div>
                         <div class="card-item-number">#${card.collector_number}</div>
                     `;
                     cardsGrid.appendChild(cardElement);
