@@ -475,6 +475,40 @@
             text-decoration: underline;
             text-decoration-color: rgba(76, 205, 196, 0.6);
         }
+
+        /* Used cards button */
+        .used-cards-btn {
+            margin-top: 20px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(45deg, #764ba2 0%, #667eea 100%);
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .used-cards-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(118, 75, 162, 0.4);
+        }
+
+        .used-cards-btn:active {
+            transform: translateY(0);
+        }
+
+        .used-cards-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
     </style>
 </head>
 <body>
@@ -487,6 +521,7 @@
         <div class="controls">
             <button class="btn" id="next-scheme">次の計略</button>
             <button class="btn secondary" id="reset-game">ゲームリセット</button>
+            <button class="btn secondary" id="used-cards-control-btn" style="display: none;">過去の計略を見る</button>
         </div>
 
         <div class="game-info">
@@ -582,6 +617,8 @@
                         this.openCardGalleryModal('ongoing');
                     } else if (e.target.closest('#regular-cards-section')) {
                         this.openCardGalleryModal('regular');
+                    } else if (e.target.closest('#used-cards-control-btn')) {
+                        this.openCardGalleryModal('used');
                     }
                 });
 
@@ -717,6 +754,15 @@
                 } else {
                     counter.textContent = `ターン ${this.turnCount}`;
                 }
+                
+                // Update used cards button visibility and text
+                const usedCardsBtn = document.getElementById('used-cards-control-btn');
+                if (this.usedSchemes.length > 0) {
+                    usedCardsBtn.style.display = 'inline-block';
+                    usedCardsBtn.textContent = `過去の計略を見る (${this.usedSchemes.length})`;
+                } else {
+                    usedCardsBtn.style.display = 'none';
+                }
             }
 
             updateStats() {
@@ -770,6 +816,9 @@
                         !card.type_line_ja.includes('持続') && !card.type_line.includes('Ongoing')
                     );
                     titleText = '通常計略カード一覧';
+                } else if (type === 'used') {
+                    cardsToShow = this.usedSchemes.slice().reverse(); // 新しい順に表示
+                    titleText = '過去の計略カード一覧';
                 } else {
                     cardsToShow = DUSKMOURN_SCHEME_CARDS;
                     titleText = '計略カード一覧';
