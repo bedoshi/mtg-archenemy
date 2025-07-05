@@ -3,189 +3,561 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MTG Archenemy Scheme Cards</title>
+    <title>MTG Archenemy - Duskmourn Scheme Cards</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #1a1a1a;
-            color: #fff;
         }
-        
-        .game-header {
+
+        .header {
             text-align: center;
             margin-bottom: 30px;
-        }
-        
-        .game-controls {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        button {
-            padding: 10px 20px;
-            margin: 0 10px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        
-        #next-turn {
-            background-color: #4CAF50;
-            color: white;
-        }
-        
-        #next-turn:hover {
-            background-color: #45a049;
-        }
-        
-        #reset-game {
-            background-color: #f44336;
-            color: white;
-        }
-        
-        #reset-game:hover {
-            background-color: #da190b;
-        }
-        
-        .scheme-card {
-            background: linear-gradient(135deg, #2c2c2c 0%, #404040 100%);
-            border: 2px solid #666;
-            border-radius: 15px;
             padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
         }
-        
-        .card-header {
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn.secondary {
+            background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .btn.secondary:hover {
+            box-shadow: 0 8px 25px rgba(240, 147, 251, 0.4);
+        }
+
+        .game-info {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 30px;
+            padding: 15px 25px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+        }
+
+        .turn-counter {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .language-toggle {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .language-toggle label {
+            font-weight: 500;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #667eea;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        .card-display {
+            min-height: 600px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            max-width: 600px;
+            width: 100%;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .card-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            margin-bottom: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .card-image:hover {
+            transform: scale(1.05);
+        }
+
+        .card-title {
+            font-size: 2rem;
+            font-weight: bold;
             margin-bottom: 15px;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
-        
-        .card-id {
-            background-color: #666;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 12px;
-        }
-        
+
         .card-type {
-            background-color: #8B4513;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 12px;
-            text-transform: uppercase;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            padding: 8px 16px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: 600;
+            color: white;
         }
-        
-        .card-type[data-type="ongoing"] {
-            background-color: #4169E1;
-        }
-        
-        .card-type[data-type="scheme"] {
-            background-color: #8B4513;
-        }
-        
-        .card-name {
-            font-size: 24px;
-            margin: 10px 0;
-            color: #FFD700;
-        }
-        
-        .card-name-jp {
-            font-size: 18px;
-            margin: 10px 0;
-            color: #FFA500;
-        }
-        
+
         .card-text {
-            margin: 15px 0;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 4px solid #4ecdc4;
         }
-        
-        .text-en {
+
+        .card-flavor {
             font-style: italic;
-            color: #ccc;
-            margin: 5px 0;
+            font-size: 1rem;
+            opacity: 0.8;
+            margin-bottom: 15px;
+            color: #b0b0b0;
         }
-        
-        .text-jp {
-            color: #fff;
-            margin: 5px 0;
-        }
-        
-        .abandon-text {
+
+        .card-details {
+            display: flex;
+            justify-content: space-between;
             margin-top: 20px;
             padding: 15px;
-            background-color: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
             border-radius: 10px;
-            border-left: 4px solid #FF6B6B;
+            font-size: 0.9rem;
         }
-        
-        .abandon-text h4 {
-            color: #FF6B6B;
-            margin: 0 0 10px 0;
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
         }
-        
-        .loading {
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
             text-align: center;
-            padding: 50px;
-            color: #666;
+            backdrop-filter: blur(5px);
         }
-        
-        .turn-counter {
-            text-align: center;
-            margin: 20px 0;
-            font-size: 18px;
-            color: #FFD700;
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #4ecdc4;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .welcome-message {
+            font-size: 1.5rem;
+            opacity: 0.7;
+            margin-bottom: 30px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .controls {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .game-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .card-display {
+                padding: 20px;
+            }
+            
+            .card-details {
+                flex-direction: column;
+                gap: 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="game-header">
-        <h1>MTG Archenemy - 計略カード</h1>
-        <p>魔王戦で使用される計略カードシミュレーター</p>
-    </div>
-    
-    <div class="game-controls">
-        <button id="next-turn">次のターン</button>
-        <button id="reset-game">リセット</button>
-    </div>
-    
-    <div class="turn-counter" id="turn-counter">
-        ゲーム開始前
-    </div>
-    
-    <div id="card-display" class="loading">
-        カードを読み込んでいます...
+    <div class="container">
+        <header class="header">
+            <h1>MTG Archenemy</h1>
+            <p>Duskmourn: House of Horror - Scheme Cards</p>
+        </header>
+
+        <div class="controls">
+            <button class="btn" id="next-scheme">次の計略</button>
+            <button class="btn" id="abandon-scheme">計略を破棄</button>
+            <button class="btn secondary" id="reset-game">ゲームリセット</button>
+            <button class="btn secondary" id="shuffle-deck">デッキをシャッフル</button>
+        </div>
+
+        <div class="game-info">
+            <div class="turn-counter" id="turn-counter">ゲーム開始前</div>
+            <div class="language-toggle">
+                <label for="language-switch">EN</label>
+                <label class="switch">
+                    <input type="checkbox" id="language-switch" checked>
+                    <span class="slider"></span>
+                </label>
+                <label for="language-switch">JP</label>
+            </div>
+        </div>
+
+        <div class="card-display" id="card-display">
+            <div class="welcome-message">
+                「次の計略」ボタンを押してアーチエネミーゲームを開始してください
+            </div>
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number" id="total-cards">40</div>
+                    <div class="stat-label">総計略カード数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="ongoing-cards">12</div>
+                    <div class="stat-label">持続計略</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="regular-cards">28</div>
+                    <div class="stat-label">通常計略</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="remaining-cards">40</div>
+                    <div class="stat-label">残りカード数</div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
-    <script src="scheme_deck.js"></script>
+    <script src="duskmourn_scheme_data.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            initializeGame();
-            
-            const originalNextTurn = window.schemeGame?.nextTurn;
-            if (originalNextTurn) {
-                window.schemeGame.nextTurn = function() {
-                    const card = originalNextTurn.call(this);
-                    document.getElementById('turn-counter').textContent = `ターン ${this.getTurnCount()}`;
-                    return card;
-                };
+        class ArchenemyGame {
+            constructor() {
+                this.schemes = [...DUSKMOURN_SCHEME_CARDS];
+                this.usedSchemes = [];
+                this.currentScheme = null;
+                this.ongoingSchemes = [];
+                this.turnCount = 0;
+                this.isJapanese = true;
+                
+                this.shuffleDeck();
+                this.initializeEventListeners();
+                this.updateStats();
             }
-            
-            const originalReset = window.schemeGame?.resetGame;
-            if (originalReset) {
-                window.schemeGame.resetGame = function() {
-                    originalReset.call(this);
-                    document.getElementById('turn-counter').textContent = 'ゲーム開始前';
-                };
+
+            shuffleDeck() {
+                for (let i = this.schemes.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [this.schemes[i], this.schemes[j]] = [this.schemes[j], this.schemes[i]];
+                }
             }
+
+            initializeEventListeners() {
+                document.getElementById('next-scheme').addEventListener('click', () => {
+                    this.drawNextScheme();
+                });
+
+                document.getElementById('abandon-scheme').addEventListener('click', () => {
+                    this.abandonCurrentScheme();
+                });
+
+                document.getElementById('reset-game').addEventListener('click', () => {
+                    this.resetGame();
+                });
+
+                document.getElementById('shuffle-deck').addEventListener('click', () => {
+                    this.shuffleDeck();
+                    this.showMessage('デッキをシャッフルしました');
+                });
+
+                document.getElementById('language-switch').addEventListener('change', (e) => {
+                    this.isJapanese = e.target.checked;
+                    if (this.currentScheme) {
+                        this.displayScheme(this.currentScheme);
+                    }
+                });
+            }
+
+            drawNextScheme() {
+                if (this.schemes.length === 0) {
+                    this.showMessage('すべての計略カードが使用されました！デッキをリセットしてください。');
+                    return;
+                }
+
+                this.currentScheme = this.schemes.shift();
+                this.usedSchemes.push(this.currentScheme);
+                this.turnCount++;
+
+                // If it's an ongoing scheme, add to ongoing schemes list
+                if (this.currentScheme.type_line.includes('Ongoing')) {
+                    this.ongoingSchemes.push(this.currentScheme);
+                }
+
+                this.displayScheme(this.currentScheme);
+                this.updateTurnCounter();
+                this.updateStats();
+            }
+
+            displayScheme(scheme) {
+                const cardDisplay = document.getElementById('card-display');
+                
+                const name = this.isJapanese ? scheme.name_ja : scheme.name;
+                const typeLine = this.isJapanese ? scheme.type_line_ja : scheme.type_line;
+                const oracleText = this.isJapanese ? scheme.oracle_text_ja : scheme.oracle_text;
+                const imageUrl = this.isJapanese ? scheme.image_uris_ja.normal : '#';
+
+                cardDisplay.innerHTML = `
+                    <div class="card">
+                        ${this.isJapanese ? `<img src="${imageUrl}" alt="${name}" class="card-image" onerror="this.style.display='none'">` : ''}
+                        <div class="card-title">${name}</div>
+                        <div class="card-type">${typeLine}</div>
+                        <div class="card-text">${oracleText.replace(/\n/g, '<br>')}</div>
+                        ${scheme.flavor_text ? `<div class="card-flavor">${scheme.flavor_text}</div>` : ''}
+                        <div class="card-details">
+                            <span>アーティスト: ${scheme.artist}</span>
+                            <span>セット: ${scheme.set.toUpperCase()}</span>
+                            <span>コレクター番号: ${scheme.collector_number}</span>
+                        </div>
+                        ${this.ongoingSchemes.length > 0 ? `
+                            <div style="margin-top: 20px; padding: 15px; background: rgba(255, 165, 0, 0.2); border-radius: 10px;">
+                                <strong>継続中の計略:</strong><br>
+                                ${this.ongoingSchemes.map(os => this.isJapanese ? os.name_ja : os.name).join(', ')}
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+            }
+
+            abandonCurrentScheme() {
+                if (!this.currentScheme) {
+                    this.showMessage('破棄する計略がありません');
+                    return;
+                }
+
+                // If current scheme is ongoing, remove from ongoing schemes
+                if (this.currentScheme.type_line.includes('Ongoing')) {
+                    const index = this.ongoingSchemes.findIndex(os => os.collector_number === this.currentScheme.collector_number);
+                    if (index > -1) {
+                        this.ongoingSchemes.splice(index, 1);
+                    }
+                }
+
+                // Put the abandoned scheme at the bottom of the deck
+                this.schemes.push(this.currentScheme);
+
+                const schemeName = this.isJapanese ? this.currentScheme.name_ja : this.currentScheme.name;
+                this.showMessage(`「${schemeName}」を破棄しました（山札の一番下に送られました）`);
+                this.currentScheme = null;
+                this.updateStats();
+                
+                // Clear display
+                document.getElementById('card-display').innerHTML = `
+                    <div class="welcome-message">
+                        計略が破棄されました。「次の計略」ボタンを押して続行してください。
+                    </div>
+                `;
+            }
+
+            resetGame() {
+                this.schemes = [...DUSKMOURN_SCHEME_CARDS];
+                this.usedSchemes = [];
+                this.currentScheme = null;
+                this.ongoingSchemes = [];
+                this.turnCount = 0;
+                
+                this.shuffleDeck();
+                this.updateTurnCounter();
+                this.updateStats();
+                
+                document.getElementById('card-display').innerHTML = `
+                    <div class="welcome-message">
+                        ゲームがリセットされました。「次の計略」ボタンを押してゲームを開始してください。
+                    </div>
+                    <div class="stats">
+                        <div class="stat-card">
+                            <div class="stat-number">40</div>
+                            <div class="stat-label">総計略カード数</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">12</div>
+                            <div class="stat-label">持続計略</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">28</div>
+                            <div class="stat-label">通常計略</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">40</div>
+                            <div class="stat-label">残りカード数</div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            updateTurnCounter() {
+                const counter = document.getElementById('turn-counter');
+                if (this.turnCount === 0) {
+                    counter.textContent = 'ゲーム開始前';
+                } else {
+                    counter.textContent = `ターン ${this.turnCount}`;
+                }
+            }
+
+            updateStats() {
+                document.getElementById('remaining-cards').textContent = this.schemes.length;
+            }
+
+            showMessage(message) {
+                const cardDisplay = document.getElementById('card-display');
+                cardDisplay.innerHTML = `
+                    <div class="welcome-message">
+                        ${message}
+                    </div>
+                `;
+                
+                // Auto-hide message after 3 seconds if it's a temporary message
+                if (message.includes('シャッフル') || message.includes('破棄')) {
+                    setTimeout(() => {
+                        if (cardDisplay.innerHTML.includes(message)) {
+                            cardDisplay.innerHTML = `
+                                <div class="welcome-message">
+                                    「次の計略」ボタンを押してゲームを続行してください
+                                </div>
+                            `;
+                        }
+                    }, 3000);
+                }
+            }
+        }
+
+        // Initialize the game when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            window.archenemyGame = new ArchenemyGame();
         });
     </script>
 </body>
