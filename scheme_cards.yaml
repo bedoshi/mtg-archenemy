@@ -2,7 +2,8 @@
 # 魔王戦で使用される計略カード40種類の情報
 
 scheme_cards:
-  - name: "A Display of My Dark Power"
+  - id: 1
+    name: "A Display of My Dark Power"
     name_jp: "我が闇の力の誇示"
     type: "ongoing"
     text: "At the beginning of your upkeep, put a -1/-1 counter on each creature your opponents control. Then if a creature an opponent controls has toughness 0 or less, destroy it."
@@ -10,7 +11,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, destroy all creatures."
     abandon_text_jp: "この計略を放棄した時、すべてのクリーチャーを破壊する。"
 
-  - name: "All in Good Time"
+  - id: 2
+    name: "All in Good Time"
     name_jp: "すべて良き時に"
     type: "ongoing"
     text: "When you set this scheme in motion, each player takes an extra turn after this one."
@@ -18,13 +20,15 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, you may search your library for two cards and put them into your hand. Then shuffle your library."
     abandon_text_jp: "この計略を放棄した時、あなたはライブラリーからカード2枚を探してもよい。そうしたなら、それらをあなたの手札に加える。その後、ライブラリーをシャッフルする。"
 
-  - name: "Behold the Power of Destruction"
+  - id: 3
+    name: "Behold the Power of Destruction"
     name_jp: "破壊の力を見よ"
     type: "scheme"
     text: "When you set this scheme in motion, destroy target noncreature permanent. Then destroy all permanents that share a name with that permanent."
     text_jp: "この計略を始動した時、クリーチャーでない対象のパーマネントを破壊する。その後、そのパーマネントと同じ名前を持つすべてのパーマネントを破壊する。"
 
-  - name: "Bow to My Command"
+  - id: 4
+    name: "Bow to My Command"
     name_jp: "我が命令に従え"
     type: "ongoing"
     text: "As you set this scheme in motion, choose a creature card in your graveyard. That card gains encore until end of turn. Its encore cost is equal to its mana cost."
@@ -32,7 +36,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, return up to two target creature cards from your graveyard to your hand."
     abandon_text_jp: "この計略を放棄した時、あなたの墓地から対象のクリーチャーカード最大2枚をあなたの手札に戻す。"
 
-  - name: "Delight in the Hunt"
+  - id: 5
+    name: "Delight in the Hunt"
     name_jp: "狩りの喜び"
     type: "ongoing"
     text: "When you set this scheme in motion, you may search your library for a creature card, reveal it, and put it into your hand. Then shuffle your library."
@@ -40,7 +45,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, creatures you control get +1/+1 and gain trample until end of turn."
     abandon_text_jp: "この計略を放棄した時、あなたがコントロールしているクリーチャーは+1/+1の修整を受け、ターン終了時まで踏みにじりを得る。"
 
-  - name: "Embrace My Diabolical Vision"
+  - id: 6
+    name: "Embrace My Diabolical Vision"
     name_jp: "我が悪魔的幻想を受け入れよ"
     type: "ongoing"
     text: "When you set this scheme in motion, each player discards their hand and draws seven cards."
@@ -48,7 +54,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, you may cast a sorcery card from your hand without paying its mana cost."
     abandon_text_jp: "この計略を放棄した時、あなたは手札からソーサリーカード1枚をそのマナコストを支払うことなく唱えてもよい。"
 
-  - name: "Every Dream a Nightmare"
+  - id: 7
+    name: "Every Dream a Nightmare"
     name_jp: "すべての夢を悪夢に"
     type: "ongoing"
     text: "When you set this scheme in motion, each opponent discards a card."
@@ -56,7 +63,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, you may return target creature card from your graveyard to the battlefield."
     abandon_text_jp: "この計略を放棄した時、あなたは墓地から対象のクリーチャーカード1枚を戦場に戻してもよい。"
 
-  - name: "Every Last Vestige Shall Rot"
+  - id: 8
+    name: "Every Last Vestige Shall Rot"
     name_jp: "すべての最後の痕跡は腐り果てん"
     type: "ongoing"
     text: "When you set this scheme in motion, destroy all artifacts and enchantments."
@@ -64,13 +72,15 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, you may destroy target permanent."
     abandon_text_jp: "この計略を放棄した時、あなたは対象のパーマネント1つを破壊してもよい。"
 
-  - name: "Evil Comes to Fruition"
+  - id: 9
+    name: "Evil Comes to Fruition"
     name_jp: "悪が実を結ぶ"
     type: "scheme"
     text: "When you set this scheme in motion, all creatures get -1/-1 until end of turn. You may search your library for a Swamp card and put it onto the battlefield. Then shuffle your library."
     text_jp: "この計略を始動した時、すべてのクリーチャーは-1/-1の修整を受ける。あなたはライブラリーから沼カード1枚を探して戦場に出してもよい。その後、ライブラリーをシャッフルする。"
 
-  - name: "Feed the Machine"
+  - id: 10
+    name: "Feed the Machine"
     name_jp: "機械に餌をやれ"
     type: "ongoing"
     text: "When you set this scheme in motion, put a +1/+1 counter on each artifact creature you control."
@@ -78,7 +88,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, you may search your library for an artifact card, reveal it, and put it into your hand. Then shuffle your library."
     abandon_text_jp: "この計略を放棄した時、あなたはライブラリーからアーティファクトカード1枚を探してもよい。そうしたなら、それを公開してあなたの手札に加える。その後、ライブラリーをシャッフルする。"
 
-  - name: "I Delight in Your Convulsions"
+  - id: 11
+    name: "I Delight in Your Convulsions"
     name_jp: "汝の痙攣を我は喜ぶ"
     type: "ongoing"
     text: "When you set this scheme in motion, each opponent loses 2 life."
@@ -86,7 +97,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, you may have target player lose 5 life."
     abandon_text_jp: "この計略を放棄した時、あなたは対象のプレイヤーに5点のライフを失わせてもよい。"
 
-  - name: "I Know All, I See All"
+  - id: 12
+    name: "I Know All, I See All"
     name_jp: "我はすべてを知り、すべてを見る"
     type: "ongoing"
     text: "When you set this scheme in motion, draw two cards."
@@ -94,7 +106,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, you may look at the top card of target player's library."
     abandon_text_jp: "この計略を放棄した時、あなたは対象のプレイヤーのライブラリーの一番上のカードを見てもよい。"
 
-  - name: "Ignite the Cloneforge!"
+  - id: 13
+    name: "Ignite the Cloneforge!"
     name_jp: "クローン鋳造所に点火せよ！"
     type: "ongoing"
     text: "When you set this scheme in motion, create a token that's a copy of target creature."
@@ -102,7 +115,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, destroy all tokens."
     abandon_text_jp: "この計略を放棄した時、すべてのトークンを破壊する。"
 
-  - name: "Imprison This Insolent Wretch"
+  - id: 14
+    name: "Imprison This Insolent Wretch"
     name_jp: "この無礼な奴を投獄せよ"
     type: "ongoing"
     text: "When you set this scheme in motion, choose target creature an opponent controls. That creature can't attack or block, and its activated abilities can't be activated."
@@ -110,13 +124,15 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, tap all creatures your opponents control."
     abandon_text_jp: "この計略を放棄した時、対戦相手がコントロールしているすべてのクリーチャーをタップする。"
 
-  - name: "Into the Earthen Maw"
+  - id: 15
+    name: "Into the Earthen Maw"
     name_jp: "土の大口へ"
     type: "scheme"
     text: "When you set this scheme in motion, each opponent sacrifices a creature or planeswalker."
     text_jp: "この計略を始動した時、各対戦相手はクリーチャー1体かプレインズウォーカー1体を生け贄に捧げる。"
 
-  - name: "Look Skyward and Despair"
+  - id: 16
+    name: "Look Skyward and Despair"
     name_jp: "空を見上げて絶望せよ"
     type: "ongoing"
     text: "When you set this scheme in motion, each player may search their library for a card and put it into their hand. Then each player shuffles their library."
@@ -124,7 +140,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, the next spell you cast this turn costs {3} less to cast."
     abandon_text_jp: "この計略を放棄した時、このターンにあなたが次に唱える呪文のコストは{3}少なくなる。"
 
-  - name: "Make Them Tremble"
+  - id: 17
+    name: "Make Them Tremble"
     name_jp: "奴らを震え上がらせよ"
     type: "ongoing"
     text: "When you set this scheme in motion, creatures you control get +1/+0 until end of turn."
@@ -132,7 +149,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, creatures you control gain menace until end of turn."
     abandon_text_jp: "この計略を放棄した時、あなたがコントロールしているクリーチャーはターン終了時まで威迫を得る。"
 
-  - name: "May Civilization Collapse"
+  - id: 18
+    name: "May Civilization Collapse"
     name_jp: "文明よ崩壊せよ"
     type: "ongoing"
     text: "When you set this scheme in motion, each player sacrifices two lands."
@@ -140,13 +158,15 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, you may search your library for up to two basic land cards and put them onto the battlefield tapped. Then shuffle your library."
     abandon_text_jp: "この計略を放棄した時、あなたはライブラリーから基本土地カード最大2枚を探してもよい。そうしたなら、それらをタップ状態で戦場に出す。その後、ライブラリーをシャッフルする。"
 
-  - name: "My Crushing Masterstroke"
+  - id: 19
+    name: "My Crushing Masterstroke"
     name_jp: "我が粉砕の傑作"
     type: "scheme"
     text: "When you set this scheme in motion, each opponent's life total becomes 10."
     text_jp: "この計略を始動した時、各対戦相手のライフ総量は10になる。"
 
-  - name: "My Genius Knows No Bounds"
+  - id: 20
+    name: "My Genius Knows No Bounds"
     name_jp: "我が天才に限界はない"
     type: "ongoing"
     text: "When you set this scheme in motion, draw three cards."
@@ -154,7 +174,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, you may cast an instant or sorcery card from your hand without paying its mana cost."
     abandon_text_jp: "この計略を放棄した時、あなたは手札からインスタントかソーサリーカード1枚をそのマナコストを支払うことなく唱えてもよい。"
 
-  - name: "My Laughter Echoes"
+  - id: 21
+    name: "My Laughter Echoes"
     name_jp: "我が笑い声がこだまする"
     type: "ongoing"
     text: "When you set this scheme in motion, each opponent discards a card, then draws a card."
@@ -162,7 +183,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, you may return target instant or sorcery card from your graveyard to your hand."
     abandon_text_jp: "この計略を放棄した時、あなたは墓地から対象のインスタントかソーサリーカード1枚をあなたの手札に戻してもよい。"
 
-  - name: "My Undead Horde Awakens"
+  - id: 22
+    name: "My Undead Horde Awakens"
     name_jp: "我がアンデッド軍団の覚醒"
     type: "ongoing"
     text: "When you set this scheme in motion, return all creature cards from your graveyard to your hand."
@@ -170,7 +192,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, you may put a creature card from your hand onto the battlefield."
     abandon_text_jp: "この計略を放棄した時、あなたは手札からクリーチャーカード1枚を戦場に出してもよい。"
 
-  - name: "My Wish Is Your Command"
+  - id: 23
+    name: "My Wish Is Your Command"
     name_jp: "我が願いは汝の命令"
     type: "ongoing"
     text: "When you set this scheme in motion, you may choose target noncreature spell. Copy it. You may choose new targets for the copy."
@@ -178,7 +201,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, draw a card for each card in your hand."
     abandon_text_jp: "この計略を放棄した時、あなたの手札にあるカード1枚につきカード1枚を引く。"
 
-  - name: "Nature Shields Its Own"
+  - id: 24
+    name: "Nature Shields Its Own"
     name_jp: "自然は自らを守る"
     type: "ongoing"
     text: "When you set this scheme in motion, creatures you control gain hexproof until end of turn."
@@ -186,7 +210,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, put a +1/+1 counter on each creature you control."
     abandon_text_jp: "この計略を放棄した時、あなたがコントロールしているクリーチャーのそれぞれの上に+1/+1カウンターを1個置く。"
 
-  - name: "No One Will Hear Your Cries"
+  - id: 25
+    name: "No One Will Hear Your Cries"
     name_jp: "誰も汝の叫びを聞かない"
     type: "ongoing"
     text: "When you set this scheme in motion, each opponent discards two cards."
@@ -194,7 +219,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, you may return target creature card from your graveyard to your hand."
     abandon_text_jp: "この計略を放棄した時、あなたは墓地から対象のクリーチャーカード1枚をあなたの手札に戻してもよい。"
 
-  - name: "Nothing Can Stop Me Now"
+  - id: 26
+    name: "Nothing Can Stop Me Now"
     name_jp: "今や何物も我を止められない"
     type: "ongoing"
     text: "When you set this scheme in motion, draw cards equal to the number of opponents you have."
@@ -202,7 +228,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, you may play an additional land this turn."
     abandon_text_jp: "この計略を放棄した時、あなたはこのターンに追加の土地を1つプレイしてもよい。"
 
-  - name: "Realms Befitting My Majesty"
+  - id: 27
+    name: "Realms Befitting My Majesty"
     name_jp: "我が威厳にふさわしい領域"
     type: "ongoing"
     text: "When you set this scheme in motion, search your library for up to two basic land cards and put them onto the battlefield tapped. Then shuffle your library."
@@ -210,7 +237,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, you may search your library for a nonbasic land card and put it onto the battlefield. Then shuffle your library."
     abandon_text_jp: "この計略を放棄した時、あなたはライブラリーから基本でない土地カード1枚を探してもよい。そうしたなら、それを戦場に出す。その後、ライブラリーをシャッフルする。"
 
-  - name: "Roots of All Evil"
+  - id: 28
+    name: "Roots of All Evil"
     name_jp: "すべての悪の根源"
     type: "ongoing"
     text: "When you set this scheme in motion, add {B}{B}{B} to your mana pool."
@@ -218,7 +246,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, you may cast a spell with converted mana cost 3 or less from your hand without paying its mana cost."
     abandon_text_jp: "この計略を放棄した時、あなたは手札から点数で見たマナコストが3以下の呪文1つをそのマナコストを支払うことなく唱えてもよい。"
 
-  - name: "Rotted Ones, Lay Siege"
+  - id: 29
+    name: "Rotted Ones, Lay Siege"
     name_jp: "腐った者よ、包囲せよ"
     type: "ongoing"
     text: "When you set this scheme in motion, create five 2/2 black Zombie creature tokens."
@@ -226,7 +255,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, destroy all creatures with toughness 2 or less."
     abandon_text_jp: "この計略を放棄した時、タフネス2以下のすべてのクリーチャーを破壊する。"
 
-  - name: "Surrender Your Thoughts"
+  - id: 30
+    name: "Surrender Your Thoughts"
     name_jp: "汝の思考を差し出せ"
     type: "ongoing"
     text: "When you set this scheme in motion, target opponent reveals their hand. You choose a nonland card from it. That player discards that card."
@@ -234,7 +264,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, each opponent discards a card."
     abandon_text_jp: "この計略を放棄した時、各対戦相手はカード1枚を捨てる。"
 
-  - name: "The Dead Shall Serve"
+  - id: 31
+    name: "The Dead Shall Serve"
     name_jp: "死者は仕えるだろう"
     type: "ongoing"
     text: "When you set this scheme in motion, return target creature card from your graveyard to the battlefield."
@@ -242,13 +273,15 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, destroy target creature."
     abandon_text_jp: "この計略を放棄した時、対象のクリーチャー1体を破壊する。"
 
-  - name: "The Fate of the Flammable"
+  - id: 32
+    name: "The Fate of the Flammable"
     name_jp: "可燃物の運命"
     type: "scheme"
     text: "When you set this scheme in motion, this scheme deals 3 damage to each creature."
     text_jp: "この計略を始動した時、この計略は各クリーチャーに3点のダメージを与える。"
 
-  - name: "The Iron Guardian Stirs"
+  - id: 33
+    name: "The Iron Guardian Stirs"
     name_jp: "鉄の守護者が動く"
     type: "ongoing"
     text: "When you set this scheme in motion, create a 4/4 colorless Golem artifact creature token."
@@ -256,7 +289,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, destroy all artifacts."
     abandon_text_jp: "この計略を放棄した時、すべてのアーティファクトを破壊する。"
 
-  - name: "The Pieces Are Coming Together"
+  - id: 34
+    name: "The Pieces Are Coming Together"
     name_jp: "部品が組み合わさる"
     type: "ongoing"
     text: "When you set this scheme in motion, you may search your library for an artifact card and put it into your hand. Then shuffle your library."
@@ -264,13 +298,15 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, put an artifact card from your hand onto the battlefield."
     abandon_text_jp: "この計略を放棄した時、あなたの手札からアーティファクトカード1枚を戦場に出す。"
 
-  - name: "The Very Soil Shall Shake"
+  - id: 35
+    name: "The Very Soil Shall Shake"
     name_jp: "大地そのものが震える"
     type: "scheme"
     text: "When you set this scheme in motion, each player sacrifices a land."
     text_jp: "この計略を始動した時、各プレイヤーは土地1つを生け贄に捧げる。"
 
-  - name: "Tooth and Claw"
+  - id: 36
+    name: "Tooth and Claw"
     name_jp: "牙と爪"
     type: "ongoing"
     text: "When you set this scheme in motion, create two 3/1 red Beast creature tokens."
@@ -278,7 +314,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, creatures you control gain haste until end of turn."
     abandon_text_jp: "この計略を放棄した時、あなたがコントロールしているクリーチャーはターン終了時まで速攻を得る。"
 
-  - name: "Tremble Before the God-Pharaoh"
+  - id: 37
+    name: "Tremble Before the God-Pharaoh"
     name_jp: "神ファラオの前に震えよ"
     type: "ongoing"
     text: "When you set this scheme in motion, each opponent loses 2 life and you gain 2 life."
@@ -286,7 +323,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, you may destroy target creature with toughness 3 or less."
     abandon_text_jp: "この計略を放棄した時、あなたはタフネス3以下の対象のクリーチャー1体を破壊してもよい。"
 
-  - name: "Your Fate is Thrice Sealed"
+  - id: 38
+    name: "Your Fate is Thrice Sealed"
     name_jp: "汝の運命は三重に封印された"
     type: "ongoing"
     text: "When you set this scheme in motion, draw three cards."
@@ -294,7 +332,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, you may put three cards from your hand on top of your library in any order."
     abandon_text_jp: "この計略を放棄した時、あなたは手札からカード3枚を任意の順番であなたのライブラリーの一番上に置いてもよい。"
 
-  - name: "Your Puny Minds Cannot Fathom"
+  - id: 39
+    name: "Your Puny Minds Cannot Fathom"
     name_jp: "汝らの弱き心では理解できない"
     type: "ongoing"
     text: "When you set this scheme in motion, each opponent puts the top card of their library into their graveyard."
@@ -302,7 +341,8 @@ scheme_cards:
     abandon_text: "When you abandon this scheme, you may exile target card from an opponent's graveyard."
     abandon_text_jp: "この計略を放棄した時、あなたは対戦相手の墓地から対象のカード1枚を追放してもよい。"
 
-  - name: "Your Will Is Not Your Own"
+  - id: 40
+    name: "Your Will Is Not Your Own"
     name_jp: "汝の意志は汝のものではない"
     type: "ongoing"
     text: "When you set this scheme in motion, gain control of target creature until end of turn. Untap it. It gains haste until end of turn."
