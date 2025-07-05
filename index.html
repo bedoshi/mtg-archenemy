@@ -457,6 +457,7 @@
 
 
             resetGame() {
+                console.log('Game reset called');
                 this.schemes = [...DUSKMOURN_SCHEME_CARDS];
                 this.usedSchemes = [];
                 this.currentScheme = null;
@@ -467,10 +468,13 @@
                 this.updateTurnCounter();
                 this.updateStats();
                 this.showInitialScreen();
+                console.log('Game reset completed');
             }
 
             showInitialScreen() {
-                document.getElementById('card-display').innerHTML = `
+                console.log('Showing initial screen');
+                const cardDisplay = document.getElementById('card-display');
+                cardDisplay.innerHTML = `
                     <div class="welcome-message">
                         「次の計略」ボタンを押してアーチエネミーゲームを開始してください
                     </div>
@@ -493,6 +497,7 @@
                         </div>
                     </div>
                 `;
+                console.log('Initial screen HTML set');
             }
 
             updateTurnCounter() {
