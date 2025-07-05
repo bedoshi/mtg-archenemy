@@ -510,11 +510,11 @@
                     <div class="stat-number" id="total-cards">40</div>
                     <div class="stat-label">総計略カード数</div>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card clickable" id="ongoing-cards-section">
                     <div class="stat-number" id="ongoing-cards">12</div>
                     <div class="stat-label">持続計略</div>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card clickable" id="regular-cards-section">
                     <div class="stat-number" id="regular-cards">28</div>
                     <div class="stat-label">通常計略</div>
                 </div>
@@ -577,7 +577,11 @@
                 // Modal event listeners
                 document.addEventListener('click', (e) => {
                     if (e.target.closest('#total-cards-section')) {
-                        this.openCardGalleryModal();
+                        this.openCardGalleryModal('all');
+                    } else if (e.target.closest('#ongoing-cards-section')) {
+                        this.openCardGalleryModal('ongoing');
+                    } else if (e.target.closest('#regular-cards-section')) {
+                        this.openCardGalleryModal('regular');
                     }
                 });
 
@@ -693,11 +697,11 @@
                             <div class="stat-number">40</div>
                             <div class="stat-label">総計略カード数</div>
                         </div>
-                        <div class="stat-card">
+                        <div class="stat-card clickable" id="ongoing-cards-section">
                             <div class="stat-number">12</div>
                             <div class="stat-label">持続計略</div>
                         </div>
-                        <div class="stat-card">
+                        <div class="stat-card clickable" id="regular-cards-section">
                             <div class="stat-number">28</div>
                             <div class="stat-label">通常計略</div>
                         </div>
@@ -744,15 +748,38 @@
                 }
             }
 
-            openCardGalleryModal() {
+            openCardGalleryModal(type = 'all') {
                 const modal = document.getElementById('card-gallery-modal');
                 const cardsGrid = document.getElementById('cards-grid');
+                const modalTitle = document.querySelector('.modal-title');
                 
                 // Clear existing content
                 cardsGrid.innerHTML = '';
                 
-                // Populate with all scheme cards
-                DUSKMOURN_SCHEME_CARDS.forEach((card, index) => {
+                // Filter cards based on type
+                let cardsToShow = [];
+                let titleText = '';
+                
+                if (type === 'ongoing') {
+                    cardsToShow = DUSKMOURN_SCHEME_CARDS.filter(card => 
+                        card.type_line_ja.includes('持続') || card.type_line.includes('Ongoing')
+                    );
+                    titleText = '持続計略カード一覧';
+                } else if (type === 'regular') {
+                    cardsToShow = DUSKMOURN_SCHEME_CARDS.filter(card => 
+                        !card.type_line_ja.includes('持続') && !card.type_line.includes('Ongoing')
+                    );
+                    titleText = '通常計略カード一覧';
+                } else {
+                    cardsToShow = DUSKMOURN_SCHEME_CARDS;
+                    titleText = '計略カード一覧';
+                }
+                
+                // Update modal title
+                modalTitle.textContent = titleText;
+                
+                // Populate with filtered cards
+                cardsToShow.forEach((card, index) => {
                     const cardElement = document.createElement('div');
                     cardElement.className = 'card-item';
                     cardElement.innerHTML = `
