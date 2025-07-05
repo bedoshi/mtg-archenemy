@@ -312,7 +312,6 @@
 
         <div class="controls">
             <button class="btn" id="next-scheme">次の計略</button>
-            <button class="btn" id="abandon-scheme">計略を破棄</button>
             <button class="btn secondary" id="reset-game">ゲームリセット</button>
             <button class="btn secondary" id="shuffle-deck">デッキをシャッフル</button>
         </div>
@@ -382,10 +381,6 @@
                     this.drawNextScheme();
                 });
 
-                document.getElementById('abandon-scheme').addEventListener('click', () => {
-                    this.abandonCurrentScheme();
-                });
-
                 document.getElementById('reset-game').addEventListener('click', () => {
                     this.resetGame();
                 });
@@ -404,6 +399,19 @@
             }
 
             drawNextScheme() {
+                // First, abandon current scheme if it exists
+                if (this.currentScheme) {
+                    // If current scheme is ongoing, remove from ongoing schemes
+                    if (this.currentScheme.type_line.includes('Ongoing')) {
+                        const index = this.ongoingSchemes.findIndex(os => os.collector_number === this.currentScheme.collector_number);
+                        if (index > -1) {
+                            this.ongoingSchemes.splice(index, 1);
+                        }
+                    }
+                    // Put the abandoned scheme at the bottom of the deck
+                    this.schemes.push(this.currentScheme);
+                }
+
                 if (this.schemes.length === 0) {
                     this.showMessage('すべての計略カードが使用されました！デッキをリセットしてください。');
                     return;
@@ -453,35 +461,6 @@
                 `;
             }
 
-            abandonCurrentScheme() {
-                if (!this.currentScheme) {
-                    this.showMessage('破棄する計略がありません');
-                    return;
-                }
-
-                // If current scheme is ongoing, remove from ongoing schemes
-                if (this.currentScheme.type_line.includes('Ongoing')) {
-                    const index = this.ongoingSchemes.findIndex(os => os.collector_number === this.currentScheme.collector_number);
-                    if (index > -1) {
-                        this.ongoingSchemes.splice(index, 1);
-                    }
-                }
-
-                // Put the abandoned scheme at the bottom of the deck
-                this.schemes.push(this.currentScheme);
-
-                const schemeName = this.isJapanese ? this.currentScheme.name_ja : this.currentScheme.name;
-                this.showMessage(`「${schemeName}」を破棄しました（山札の一番下に送られました）`);
-                this.currentScheme = null;
-                this.updateStats();
-                
-                // Clear display
-                document.getElementById('card-display').innerHTML = `
-                    <div class="welcome-message">
-                        計略が破棄されました。「次の計略」ボタンを押して続行してください。
-                    </div>
-                `;
-            }
 
             resetGame() {
                 this.schemes = [...DUSKMOURN_SCHEME_CARDS];
