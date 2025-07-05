@@ -510,7 +510,10 @@
             }
 
             updateStats() {
-                document.getElementById('remaining-cards').textContent = this.schemes.length;
+                const remainingCardsElement = document.getElementById('remaining-cards');
+                if (remainingCardsElement) {
+                    remainingCardsElement.textContent = this.schemes.length;
+                }
             }
 
             showMessage(message) {
