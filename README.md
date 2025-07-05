@@ -1,5 +1,5 @@
 # mtg-archenemy
-魔王戦用の計略カードのデータをまとめることが目的のリポジトリ。
+魔王戦用の計略カードをめくる部分をwebapp化したかった個人用アプリ。
 
 ## アクセスURL
 - https://htmlpreview.github.io/?https://github.com/bedoshi/mtg-archenemy/blob/main/index.html
