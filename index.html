@@ -313,7 +313,6 @@
         <div class="controls">
             <button class="btn" id="next-scheme">次の計略</button>
             <button class="btn secondary" id="reset-game">ゲームリセット</button>
-            <button class="btn secondary" id="shuffle-deck">デッキをシャッフル</button>
         </div>
 
         <div class="game-info">
@@ -383,11 +382,6 @@
 
                 document.getElementById('reset-game').addEventListener('click', () => {
                     this.resetGame();
-                });
-
-                document.getElementById('shuffle-deck').addEventListener('click', () => {
-                    this.shuffleDeck();
-                    this.showMessage('デッキをシャッフルしました');
                 });
 
                 document.getElementById('language-switch').addEventListener('change', (e) => {
