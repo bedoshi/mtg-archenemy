@@ -891,12 +891,12 @@ function getOngoingSchemes() {
 
 function getRegularSchemes() {
   return DUSKMOURN_SCHEME_CARDS.filter(card => 
-    \!card.type_line.includes('Ongoing') && \!card.type_line_ja.includes('持続')
+    !card.type_line.includes('Ongoing') && !card.type_line_ja.includes('持続')
   );
 }
 
 // ES6モジュール対応
-if (typeof module \!== 'undefined' && module.exports) {
+if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
     DUSKMOURN_SCHEME_CARDS,
     SCHEME_CARDS,
