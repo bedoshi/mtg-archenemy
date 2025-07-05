@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTG Archenemy Scheme Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        
+        .game-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .game-controls {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        #next-turn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        #next-turn:hover {
+            background-color: #45a049;
+        }
+        
+        #reset-game {
+            background-color: #f44336;
+            color: white;
+        }
+        
+        #reset-game:hover {
+            background-color: #da190b;
+        }
+        
+        .scheme-card {
+            background: linear-gradient(135deg, #2c2c2c 0%, #404040 100%);
+            border: 2px solid #666;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .card-id {
+            background-color: #666;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        
+        .card-type {
+            background-color: #8B4513;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        
+        .card-type[data-type="ongoing"] {
+            background-color: #4169E1;
+        }
+        
+        .card-type[data-type="scheme"] {
+            background-color: #8B4513;
+        }
+        
+        .card-name {
+            font-size: 24px;
+            margin: 10px 0;
+            color: #FFD700;
+        }
+        
+        .card-name-jp {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #FFA500;
+        }
+        
+        .card-text {
+            margin: 15px 0;
+        }
+        
+        .text-en {
+            font-style: italic;
+            color: #ccc;
+            margin: 5px 0;
+        }
+        
+        .text-jp {
+            color: #fff;
+            margin: 5px 0;
+        }
+        
+        .abandon-text {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            border-left: 4px solid #FF6B6B;
+        }
+        
+        .abandon-text h4 {
+            color: #FF6B6B;
+            margin: 0 0 10px 0;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #666;
+        }
+        
+        .turn-counter {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 18px;
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-header">
+        <h1>MTG Archenemy - 計略カード</h1>
+        <p>魔王戦で使用される計略カードシミュレーター</p>
+    </div>
+    
+    <div class="game-controls">
+        <button id="next-turn">次のターン</button>
+        <button id="reset-game">リセット</button>
+    </div>
+    
+    <div class="turn-counter" id="turn-counter">
+        ゲーム開始前
+    </div>
+    
+    <div id="card-display" class="loading">
+        カードを読み込んでいます...
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="scheme_deck.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeGame();
+            
+            const originalNextTurn = window.schemeGame?.nextTurn;
+            if (originalNextTurn) {
+                window.schemeGame.nextTurn = function() {
+                    const card = originalNextTurn.call(this);
+                    document.getElementById('turn-counter').textContent = `ターン ${this.getTurnCount()}`;
+                    return card;
+                };
+            }
+            
+            const originalReset = window.schemeGame?.resetGame;
+            if (originalReset) {
+                window.schemeGame.resetGame = function() {
+                    originalReset.call(this);
+                    document.getElementById('turn-counter').textContent = 'ゲーム開始前';
+                };
+            }
+        });
+    </script>
+</body>
+</html>
