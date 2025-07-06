@@ -80,6 +80,21 @@ body {
     box-shadow: 0 8px 25px rgba(240, 147, 251, 0.4);
 }
 
+.btn.undo {
+    background: linear-gradient(45deg, #ffa726 0%, #fb8c00 100%);
+}
+
+.btn.undo:hover {
+    box-shadow: 0 8px 25px rgba(255, 167, 38, 0.4);
+}
+
+.btn.undo:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
 .game-info {
     display: flex;
     justify-content: space-between;

@@ -4,6 +4,7 @@
 const GAME_CONSTANTS = {
     ELEMENT_IDS: {
         NEXT_SCHEME: 'next-scheme',
+        UNDO_SCHEME: 'undo-scheme',
         RESET_GAME: 'reset-game',
         LANGUAGE_SWITCH: 'language-switch',
         TURN_COUNTER: 'turn-counter',
@@ -62,6 +63,9 @@ class ArchenemyGame {
         this.ongoingSchemes = [];
         this.turnCount = 0;
         this.isJapanese = true;
+        
+        // Undo functionality
+        this.previousState = null;
         
         // Cache DOM elements
         this.domCache = new Map();
@@ -130,11 +134,16 @@ class ArchenemyGame {
      */
     initializeButtonListeners() {
         const nextSchemeBtn = this.getElement(GAME_CONSTANTS.ELEMENT_IDS.NEXT_SCHEME);
+        const undoSchemeBtn = this.getElement(GAME_CONSTANTS.ELEMENT_IDS.UNDO_SCHEME);
         const resetGameBtn = this.getElement(GAME_CONSTANTS.ELEMENT_IDS.RESET_GAME);
         const languageSwitch = this.getElement(GAME_CONSTANTS.ELEMENT_IDS.LANGUAGE_SWITCH);
 
         if (nextSchemeBtn) {
             nextSchemeBtn.addEventListener('click', () => this.drawNextScheme());
+        }
+
+        if (undoSchemeBtn) {
+            undoSchemeBtn.addEventListener('click', () => this.undoLastScheme());
         }
 
         if (resetGameBtn) {
@@ -205,6 +214,9 @@ class ArchenemyGame {
      */
     drawNextScheme() {
         try {
+            // Save current state before making changes
+            this.saveCurrentState();
+
             this.handleCurrentScheme();
 
             if (this.schemes.length === 0) {
@@ -214,6 +226,7 @@ class ArchenemyGame {
 
             this.processNewScheme();
             this.updateDisplay();
+            this.updateUndoButton();
         } catch (error) {
             console.error('Error drawing next scheme:', error);
         }
@@ -344,6 +357,7 @@ class ArchenemyGame {
             this.shuffleDeck();
             this.updateAllDisplays();
             this.showInitialScreen();
+            this.updateUndoButton();
             console.log('Game reset completed');
         } catch (error) {
             console.error('Error resetting game:', error);
@@ -359,6 +373,7 @@ class ArchenemyGame {
         this.currentScheme = null;
         this.ongoingSchemes = [];
         this.turnCount = 0;
+        this.previousState = null;
     }
 
     /**
@@ -678,6 +693,73 @@ class ArchenemyGame {
             } else {
                 console.log('Swiped left');
                 // Could be used for navigation if needed
+            }
+        }
+    }
+
+    /**
+     * Save current game state for undo functionality
+     */
+    saveCurrentState() {
+        this.previousState = {
+            schemes: [...this.schemes],
+            usedSchemes: [...this.usedSchemes],
+            currentScheme: this.currentScheme,
+            ongoingSchemes: [...this.ongoingSchemes],
+            turnCount: this.turnCount
+        };
+    }
+
+    /**
+     * Undo the last scheme draw operation
+     */
+    undoLastScheme() {
+        if (!this.previousState) {
+            console.log('No previous state to undo');
+            return;
+        }
+
+        try {
+            // Restore previous state
+            this.schemes = [...this.previousState.schemes];
+            this.usedSchemes = [...this.previousState.usedSchemes];
+            this.currentScheme = this.previousState.currentScheme;
+            this.ongoingSchemes = [...this.previousState.ongoingSchemes];
+            this.turnCount = this.previousState.turnCount;
+            
+            // Clear previous state (can only undo once)
+            this.previousState = null;
+            
+            // Update display
+            if (this.currentScheme) {
+                this.displayScheme(this.currentScheme);
+            } else {
+                this.showInitialScreen();
+            }
+            
+            this.updateTurnCounter();
+            this.updateStats();
+            this.updateUndoButton();
+            
+            console.log('Undo completed');
+        } catch (error) {
+            console.error('Error during undo:', error);
+        }
+    }
+
+    /**
+     * Update the undo button visibility and state
+     */
+    updateUndoButton() {
+        const undoBtn = this.getElement(GAME_CONSTANTS.ELEMENT_IDS.UNDO_SCHEME);
+        if (undoBtn) {
+            if (this.previousState) {
+                undoBtn.style.display = 'inline-block';
+                undoBtn.classList.add('undo');
+                undoBtn.disabled = false;
+            } else {
+                undoBtn.style.display = 'none';
+                undoBtn.disabled = true;
             }
         }
     }
