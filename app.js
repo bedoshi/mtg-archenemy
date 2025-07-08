@@ -811,6 +811,9 @@ class ArchenemyGame {
             this.currentSchemeCards = window.DUSKMOURN_SCHEME_CARDS;
         } else if (setName === 'amonkhet') {
             this.currentSchemeCards = window.AMONKHET_SCHEME_CARDS;
+        } else if (setName === 'mixed') {
+            // Combine both card sets
+            this.currentSchemeCards = [...window.DUSKMOURN_SCHEME_CARDS, ...window.AMONKHET_SCHEME_CARDS];
         }
         
         // Reset the game with the new set
@@ -830,6 +833,8 @@ class ArchenemyGame {
                 headerSubtitle.textContent = 'Duskmourn: House of Horror - Scheme Cards';
             } else if (this.currentSet === 'amonkhet') {
                 headerSubtitle.textContent = 'Archenemy: Nicol Bolas - Scheme Cards';
+            } else if (this.currentSet === 'mixed') {
+                headerSubtitle.textContent = 'Mixed Set: Duskmourn + Amonkhet - Scheme Cards';
             }
         }
     }
