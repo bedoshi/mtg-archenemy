@@ -1,0 +1,366 @@
+scheme_cards:
+- name: Because I Have Willed It
+  mana_cost: ''
+  type_line: Ongoing Scheme
+  oracle_text: '(An ongoing scheme remains face up until it''s abandoned.)
+
+    Spells you cast cost {1} less to cast.
+
+    At the beginning of your opponents'' end step, if they cast four or more spells
+    this turn, abandon this scheme.'
+  flavor_text: null
+  artist: Adrian Majkrzak
+  collector_number: '1'
+  set: oe01
+  rarity: common
+  cmc: 0
+  image_uris:
+    small: https://cards.scryfall.io/small/front/a/b/ab9016e5-f64f-4574-bf30-da0456b1ddec.jpg
+    normal: https://cards.scryfall.io/normal/front/a/b/ab9016e5-f64f-4574-bf30-da0456b1ddec.jpg
+    large: https://cards.scryfall.io/large/front/a/b/ab9016e5-f64f-4574-bf30-da0456b1ddec.jpg
+    png: https://cards.scryfall.io/png/front/a/b/ab9016e5-f64f-4574-bf30-da0456b1ddec.png
+- name: Behold My Grandeur
+  mana_cost: ''
+  type_line: Scheme
+  oracle_text: When you set this scheme in motion, add {U}{B}{R}. When you set this
+    scheme in motion, if you control six or more lands, you may search your library
+    for a card with mana value 6 or greater, reveal it, put it into your hand, then
+    shuffle.
+  flavor_text: null
+  artist: Zack Stella
+  collector_number: '2'
+  set: oe01
+  rarity: common
+  cmc: 0
+  image_uris:
+    small: https://cards.scryfall.io/small/front/4/c/4c7c4ac6-de9c-4040-8b6a-c0d2b074c6d7.jpg
+    normal: https://cards.scryfall.io/normal/front/4/c/4c7c4ac6-de9c-4040-8b6a-c0d2b074c6d7.jpg
+    large: https://cards.scryfall.io/large/front/4/c/4c7c4ac6-de9c-4040-8b6a-c0d2b074c6d7.jpg
+    png: https://cards.scryfall.io/png/front/4/c/4c7c4ac6-de9c-4040-8b6a-c0d2b074c6d7.png
+- name: Bow to My Command
+  mana_cost: ''
+  type_line: Ongoing Scheme
+  oracle_text: '(An ongoing scheme remains face up until it''s abandoned.)
+
+    As you set this scheme in motion, choose an opponent. Creatures the chosen player
+    controls can''t attack you or planeswalkers you control.
+
+    At the beginning of your opponents'' end step, they may tap any number of untapped
+    creatures they control with total power 8 or greater. If they do, abandon this
+    scheme.'
+  flavor_text: null
+  artist: Dan Murayama Scott
+  collector_number: '3'
+  set: oe01
+  rarity: common
+  cmc: 0
+  image_uris:
+    small: https://cards.scryfall.io/small/front/8/2/82cbf17b-c2c9-4a59-9b6f-b9c50e7b1c3a.jpg
+    normal: https://cards.scryfall.io/normal/front/8/2/82cbf17b-c2c9-4a59-9b6f-b9c50e7b1c3a.jpg
+    large: https://cards.scryfall.io/large/front/8/2/82cbf17b-c2c9-4a59-9b6f-b9c50e7b1c3a.jpg
+    png: https://cards.scryfall.io/png/front/8/2/82cbf17b-c2c9-4a59-9b6f-b9c50e7b1c3a.png
+- name: Choose Your Demise
+  mana_cost: ''
+  type_line: Scheme
+  oracle_text: When you set this scheme in motion, look at the top four cards of your
+    library and separate them into a face-down pile and a face-up pile. An opponent
+    chooses one of those piles. Put the cards in that pile into your hand and the
+    rest on the bottom of your library in any order.
+  flavor_text: null
+  artist: Nils Hamm
+  collector_number: '4'
+  set: oe01
+  rarity: common
+  cmc: 0
+  image_uris:
+    small: https://cards.scryfall.io/small/front/8/b/8b4e4a8f-5f9e-4b6f-9c0e-65b4c4d5e7ec.jpg
+    normal: https://cards.scryfall.io/normal/front/8/b/8b4e4a8f-5f9e-4b6f-9c0e-65b4c4d5e7ec.jpg
+    large: https://cards.scryfall.io/large/front/8/b/8b4e4a8f-5f9e-4b6f-9c0e-65b4c4d5e7ec.jpg
+    png: https://cards.scryfall.io/png/front/8/b/8b4e4a8f-5f9e-4b6f-9c0e-65b4c4d5e7ec.png
+- name: Delight in the Hunt
+  mana_cost: ''
+  type_line: Scheme
+  oracle_text: When you set this scheme in motion, create a 3/3 black Horror creature
+    token and prevent all damage that would be dealt to creatures you control this
+    turn.
+  flavor_text: '"Pain is a delusion of the weak. I''ll demonstrate."'
+  artist: Titus Lunter
+  collector_number: '5'
+  set: oe01
+  rarity: common
+  cmc: 0
+  image_uris:
+    small: https://cards.scryfall.io/small/front/c/5/c5b01c7e-0e6c-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    normal: https://cards.scryfall.io/normal/front/c/5/c5b01c7e-0e6c-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    large: https://cards.scryfall.io/large/front/c/5/c5b01c7e-0e6c-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    png: https://cards.scryfall.io/png/front/c/5/c5b01c7e-0e6c-4c3c-9c3c-5c2c1c4c6c6c.png
+- name: Every Dream a Nightmare
+  mana_cost: ''
+  type_line: Scheme
+  oracle_text: When you set this scheme in motion, each opponent discards a card.
+    You draw a card for each land card discarded this way.
+  flavor_text: '"Let me unburden you of these fatuous hopes."'
+  artist: Mathias Kollros
+  collector_number: '6'
+  set: oe01
+  rarity: common
+  cmc: 0
+  image_uris:
+    small: https://cards.scryfall.io/small/front/d/1/d1b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    normal: https://cards.scryfall.io/normal/front/d/1/d1b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    large: https://cards.scryfall.io/large/front/d/1/d1b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    png: https://cards.scryfall.io/png/front/d/1/d1b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png
+- name: For Each of You, a Gift
+  mana_cost: ''
+  type_line: Scheme
+  oracle_text: When you set this scheme in motion, for each opponent, create a 3/3
+    black Horror creature token that attacks that player each combat if able.
+  flavor_text: '"My generosity blesses you all, even the undeserving."'
+  artist: Marco Nelor
+  collector_number: '7'
+  set: oe01
+  rarity: common
+  cmc: 0
+  image_uris:
+    small: https://cards.scryfall.io/small/front/e/2/e2b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    normal: https://cards.scryfall.io/normal/front/e/2/e2b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    large: https://cards.scryfall.io/large/front/e/2/e2b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    png: https://cards.scryfall.io/png/front/e/2/e2b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png
+- name: Know Evil
+  mana_cost: ''
+  type_line: Scheme
+  oracle_text: When you set this scheme in motion, until your next turn, up to one
+    target opponent can't attack with creatures, up to one target opponent can't cast
+    creature spells, and up to one target opponent can't cast noncreature spells.
+    You can't choose any player as a target more than once.
+  flavor_text: null
+  artist: Anthony Palumbo
+  collector_number: '8'
+  set: oe01
+  rarity: common
+  cmc: 0
+  image_uris:
+    small: https://cards.scryfall.io/small/front/f/3/f3b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    normal: https://cards.scryfall.io/normal/front/f/3/f3b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    large: https://cards.scryfall.io/large/front/f/3/f3b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    png: https://cards.scryfall.io/png/front/f/3/f3b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png
+- name: Make Yourself Useful
+  mana_cost: ''
+  type_line: Scheme
+  oracle_text: When you set this scheme in motion, destroy target creature an opponent
+    controls. If a creature is destroyed this way, you gain life equal to its toughness.
+  flavor_text: '"To think you''ve spent years honing your body only to die like this."'
+  artist: David Gaillet
+  collector_number: '9'
+  set: oe01
+  rarity: common
+  cmc: 0
+  image_uris:
+    small: https://cards.scryfall.io/small/front/a/4/a4b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    normal: https://cards.scryfall.io/normal/front/a/4/a4b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    large: https://cards.scryfall.io/large/front/a/4/a4b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    png: https://cards.scryfall.io/png/front/a/4/a4b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png
+- name: The Mighty Will Fall
+  mana_cost: ''
+  type_line: Scheme
+  oracle_text: When you set this scheme in motion, choose an opponent with the highest
+    life total among your opponents. That player loses 7 life.
+  flavor_text: '"Cry out for your comrades so that they may join you in misery."'
+  artist: Volkan Baǧa
+  collector_number: '10'
+  set: oe01
+  rarity: common
+  cmc: 0
+  image_uris:
+    small: https://cards.scryfall.io/small/front/b/5/b5b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    normal: https://cards.scryfall.io/normal/front/b/5/b5b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    large: https://cards.scryfall.io/large/front/b/5/b5b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    png: https://cards.scryfall.io/png/front/b/5/b5b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png
+- name: My Forces Are Innumerable
+  mana_cost: ''
+  type_line: Ongoing Scheme
+  oracle_text: '(An ongoing scheme remains face up until it''s abandoned.)
+
+    At the beginning of your end step, create a 3/3 black Horror creature token.
+
+    At the beginning of your opponents'' end step, they may sacrifice two creatures
+    of their choice. If they do, abandon this scheme.'
+  flavor_text: null
+  artist: Seb McKinnon
+  collector_number: '11'
+  set: oe01
+  rarity: common
+  cmc: 0
+  image_uris:
+    small: https://cards.scryfall.io/small/front/c/6/c6b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    normal: https://cards.scryfall.io/normal/front/c/6/c6b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    large: https://cards.scryfall.io/large/front/c/6/c6b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    png: https://cards.scryfall.io/png/front/c/6/c6b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png
+- name: My Laughter Echoes
+  mana_cost: ''
+  type_line: Ongoing Scheme
+  oracle_text: '(An ongoing scheme remains face up until it''s abandoned.)
+
+    Whenever you set a non-ongoing scheme in motion, you may abandon this scheme.
+    If you do, set that scheme in motion again.'
+  flavor_text: '"Groveling already? I''m just starting to enjoy myself."'
+  artist: Steve Argyle
+  collector_number: '12'
+  set: oe01
+  rarity: common
+  cmc: 0
+  image_uris:
+    small: https://cards.scryfall.io/small/front/d/7/d7b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    normal: https://cards.scryfall.io/normal/front/d/7/d7b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    large: https://cards.scryfall.io/large/front/d/7/d7b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    png: https://cards.scryfall.io/png/front/d/7/d7b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png
+- name: No One Will Hear Your Cries
+  mana_cost: ''
+  type_line: Scheme
+  oracle_text: When you set this scheme in motion, each opponent chooses a creature
+    they control, then sacrifices the rest.
+  flavor_text: '"Your companions were lucky to have died first."'
+  artist: McLean Kendree
+  collector_number: '13'
+  set: oe01
+  rarity: common
+  cmc: 0
+  image_uris:
+    small: https://cards.scryfall.io/small/front/e/8/e8b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    normal: https://cards.scryfall.io/normal/front/e/8/e8b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    large: https://cards.scryfall.io/large/front/e/8/e8b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    png: https://cards.scryfall.io/png/front/e/8/e8b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png
+- name: Pay Tribute to Me
+  mana_cost: ''
+  type_line: Scheme
+  oracle_text: When you set this scheme in motion, each opponent sacrifices a creature
+    of their choice. If you control six or more lands, each opponent sacrifices another
+    creature of their choice.
+  flavor_text: null
+  artist: Aaron Miller
+  collector_number: '14'
+  set: oe01
+  rarity: common
+  cmc: 0
+  image_uris:
+    small: https://cards.scryfall.io/small/front/f/9/f9b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    normal: https://cards.scryfall.io/normal/front/f/9/f9b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    large: https://cards.scryfall.io/large/front/f/9/f9b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    png: https://cards.scryfall.io/png/front/f/9/f9b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png
+- name: Power Without Equal
+  mana_cost: ''
+  type_line: Scheme
+  oracle_text: When you set this scheme in motion, draw three cards. You have no maximum
+    hand size until your next turn. If you control six or more lands, you may cast
+    up to three spells from your hand without paying their mana costs.
+  flavor_text: null
+  artist: Christine Choi
+  collector_number: '15'
+  set: oe01
+  rarity: common
+  cmc: 0
+  image_uris:
+    small: https://cards.scryfall.io/small/front/a/a/aab5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    normal: https://cards.scryfall.io/normal/front/a/a/aab5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    large: https://cards.scryfall.io/large/front/a/a/aab5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    png: https://cards.scryfall.io/png/front/a/a/aab5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png
+- name: A Reckoning Approaches
+  mana_cost: ''
+  type_line: Scheme
+  oracle_text: When you set this scheme in motion, look at the top six cards of your
+    library. You may put a creature card from among them onto the battlefield. Put
+    the rest on the bottom of your library in any order.
+  flavor_text: '"The gates open to my new era."'
+  artist: Yeong-Hao Han
+  collector_number: '16'
+  set: oe01
+  rarity: common
+  cmc: 0
+  image_uris:
+    small: https://cards.scryfall.io/small/front/b/b/bbb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    normal: https://cards.scryfall.io/normal/front/b/b/bbb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    large: https://cards.scryfall.io/large/front/b/b/bbb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    png: https://cards.scryfall.io/png/front/b/b/bbb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png
+- name: There Is No Refuge
+  mana_cost: ''
+  type_line: Scheme
+  oracle_text: When you set this scheme in motion, it deals 3 damage to up to one
+    target creature. Create a 3/3 black Horror creature token.
+  flavor_text: '"The dunes smell spilled blood."'
+  artist: Tomasz Jedruszek
+  collector_number: '17'
+  set: oe01
+  rarity: common
+  cmc: 0
+  image_uris:
+    small: https://cards.scryfall.io/small/front/c/c/ccb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    normal: https://cards.scryfall.io/normal/front/c/c/ccb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    large: https://cards.scryfall.io/large/front/c/c/ccb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    png: https://cards.scryfall.io/png/front/c/c/ccb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png
+- name: This World Belongs to Me
+  mana_cost: ''
+  type_line: Scheme
+  oracle_text: When you set this scheme in motion, draw two cards. You may play an
+    additional land this turn.
+  flavor_text: '"Little insects, I have created entire worlds and extinguished twice
+    as many."'
+  artist: Min Yum
+  collector_number: '18'
+  set: oe01
+  rarity: common
+  cmc: 0
+  image_uris:
+    small: https://cards.scryfall.io/small/front/d/d/ddb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    normal: https://cards.scryfall.io/normal/front/d/d/ddb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    large: https://cards.scryfall.io/large/front/d/d/ddb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    png: https://cards.scryfall.io/png/front/d/d/ddb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png
+- name: What's Yours Is Now Mine
+  mana_cost: ''
+  type_line: Scheme
+  oracle_text: When you set this scheme in motion, gain control of target creature
+    an opponent controls and untap it.
+  flavor_text: '"Vow your allegiance to true power."'
+  artist: Steve Argyle
+  collector_number: '19'
+  set: oe01
+  rarity: common
+  cmc: 0
+  image_uris:
+    small: https://cards.scryfall.io/small/front/e/e/eeb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    normal: https://cards.scryfall.io/normal/front/e/e/eeb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    large: https://cards.scryfall.io/large/front/e/e/eeb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    png: https://cards.scryfall.io/png/front/e/e/eeb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png
+- name: When Will You Learn?
+  mana_cost: ''
+  type_line: Scheme
+  oracle_text: When you set this scheme in motion, each opponent exiles the top card
+    of their library. You may cast any number of spells from among cards exiled this
+    way without paying their mana costs.
+  flavor_text: '"Don''t fret, infants. It wouldn''t have worked anyway."'
+  artist: Yohann Schepacz
+  collector_number: '20'
+  set: oe01
+  rarity: common
+  cmc: 0
+  image_uris:
+    small: https://cards.scryfall.io/small/front/f/f/ffb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    normal: https://cards.scryfall.io/normal/front/f/f/ffb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    large: https://cards.scryfall.io/large/front/f/f/ffb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
+    png: https://cards.scryfall.io/png/front/f/f/ffb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png
+card_statistics:
+  total_cards: 20
+  scheme_types:
+    regular_scheme: 16
+    ongoing_scheme: 4
+  artists:
+    count: 18
+  set_info:
+    name: 'Archenemy: Nicol Bolas Schemes'
+    code: oe01
+    release_date: '2017-06-16'
+additional_info:
+  archenemy_format: このカードはアーチエネミー形式でのみ使用可能
+  deck_construction: アーチエネミー用計略デッキは20枚で構成
+  card_size: 通常のMTGカード2枚分の大きさ
+  availability: アーチエネミー：ニコル・ボーラスにのみ収録
+  data_source: scryfall
