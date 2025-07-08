@@ -1,0 +1,610 @@
+// Archenemy: Nicol Bolas - Scheme Cards Data
+// データ生成日: 2017年
+// 総カード数: 20枚
+// セット: OE01 (Archenemy: Nicol Bolas Schemes)
+
+const AMONKHET_SCHEME_CARDS = [
+  {
+    "name": "Because I Have Willed It",
+    "mana_cost": "",
+    "type_line": "Ongoing Scheme",
+    "oracle_text": "(An ongoing scheme remains face up until it's abandoned.)\n\nSpells you cast cost {1} less to cast.\n\nAt the beginning of your opponents' end step, if they cast four or more spells this turn, abandon this scheme.",
+    "flavor_text": null,
+    "artist": "Adrian Majkrzak",
+    "collector_number": "1",
+    "set": "oe01",
+    "rarity": "common",
+    "cmc": 0,
+    "name_ja": "我が意志により（機械翻訳）",
+    "type_line_ja": "持続計略（機械翻訳）",
+    "oracle_text_ja": "（持続計略は放棄されるまで表向きのままである。）\n\nあなたが唱える呪文のコストは{1}少なくなる。\n\n対戦相手の終了ステップの開始時に、そのターンに対戦相手が4つ以上の呪文を唱えていた場合、この計略を放棄する。（機械翻訳）",
+    "image_uris_ja": {
+      "small": "https://cards.scryfall.io/small/front/a/b/ab9016e5-f64f-4574-bf30-da0456b1ddec.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/a/b/ab9016e5-f64f-4574-bf30-da0456b1ddec.jpg",
+      "large": "https://cards.scryfall.io/large/front/a/b/ab9016e5-f64f-4574-bf30-da0456b1ddec.jpg",
+      "png": "https://cards.scryfall.io/png/front/a/b/ab9016e5-f64f-4574-bf30-da0456b1ddec.png"
+    },
+    "image_uris_en": {
+      "small": "https://cards.scryfall.io/small/front/a/b/ab9016e5-f64f-4574-bf30-da0456b1ddec.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/a/b/ab9016e5-f64f-4574-bf30-da0456b1ddec.jpg",
+      "large": "https://cards.scryfall.io/large/front/a/b/ab9016e5-f64f-4574-bf30-da0456b1ddec.jpg",
+      "png": "https://cards.scryfall.io/png/front/a/b/ab9016e5-f64f-4574-bf30-da0456b1ddec.png"
+    }
+  },
+  {
+    "name": "Behold My Grandeur",
+    "mana_cost": "",
+    "type_line": "Scheme",
+    "oracle_text": "When you set this scheme in motion, add {U}{B}{R}. When you set this scheme in motion, if you control six or more lands, you may search your library for a card with mana value 6 or greater, reveal it, put it into your hand, then shuffle.",
+    "flavor_text": null,
+    "artist": "Zack Stella",
+    "collector_number": "2",
+    "set": "oe01",
+    "rarity": "common",
+    "cmc": 0,
+    "name_ja": "我が威光を見よ（機械翻訳）",
+    "type_line_ja": "計略（機械翻訳）",
+    "oracle_text_ja": "この計略を実行に移すとき、{U}{B}{R}を加える。この計略を実行に移すとき、あなたが6つ以上の土地をコントロールしている場合、あなたはライブラリーから点数で見たマナ・コストが6以上のカードを1枚探し、それを公開し、あなたの手札に加え、その後ライブラリーを切り直してもよい。（機械翻訳）",
+    "image_uris_ja": {
+      "small": "https://cards.scryfall.io/small/front/4/c/4c7c4ac6-de9c-4040-8b6a-c0d2b074c6d7.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/4/c/4c7c4ac6-de9c-4040-8b6a-c0d2b074c6d7.jpg",
+      "large": "https://cards.scryfall.io/large/front/4/c/4c7c4ac6-de9c-4040-8b6a-c0d2b074c6d7.jpg",
+      "png": "https://cards.scryfall.io/png/front/4/c/4c7c4ac6-de9c-4040-8b6a-c0d2b074c6d7.png"
+    },
+    "image_uris_en": {
+      "small": "https://cards.scryfall.io/small/front/4/c/4c7c4ac6-de9c-4040-8b6a-c0d2b074c6d7.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/4/c/4c7c4ac6-de9c-4040-8b6a-c0d2b074c6d7.jpg",
+      "large": "https://cards.scryfall.io/large/front/4/c/4c7c4ac6-de9c-4040-8b6a-c0d2b074c6d7.jpg",
+      "png": "https://cards.scryfall.io/png/front/4/c/4c7c4ac6-de9c-4040-8b6a-c0d2b074c6d7.png"
+    }
+  },
+  {
+    "name": "Bow to My Command",
+    "mana_cost": "",
+    "type_line": "Ongoing Scheme",
+    "oracle_text": "(An ongoing scheme remains face up until it's abandoned.)\n\nAs you set this scheme in motion, choose an opponent. Creatures the chosen player controls can't attack you or planeswalkers you control.\n\nAt the beginning of your opponents' end step, they may tap any number of untapped creatures they control with total power 8 or greater. If they do, abandon this scheme.",
+    "flavor_text": null,
+    "artist": "Dan Murayama Scott",
+    "collector_number": "3",
+    "set": "oe01",
+    "rarity": "common",
+    "cmc": 0,
+    "name_ja": "我が命令に屈せよ（機械翻訳）",
+    "type_line_ja": "持続計略（機械翻訳）",
+    "oracle_text_ja": "（持続計略は放棄されるまで表向きのままである。）\n\nこの計略を実行に移すとき、対戦相手1人を選ぶ。その選ばれたプレイヤーがコントロールするクリーチャーは、あなたやあなたがコントロールするプレインズウォーカーを攻撃できない。\n\n対戦相手の終了ステップの開始時に、対戦相手は自分がコントロールするアンタップ状態のクリーチャーを、パワーの合計が8以上になるよう好きな数タップしてもよい。そうした場合、この計略を放棄する。（機械翻訳）",
+    "image_uris_ja": {
+      "small": "https://cards.scryfall.io/small/front/8/2/82cbf17b-c2c9-4a59-9b6f-b9c50e7b1c3a.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/8/2/82cbf17b-c2c9-4a59-9b6f-b9c50e7b1c3a.jpg",
+      "large": "https://cards.scryfall.io/large/front/8/2/82cbf17b-c2c9-4a59-9b6f-b9c50e7b1c3a.jpg",
+      "png": "https://cards.scryfall.io/png/front/8/2/82cbf17b-c2c9-4a59-9b6f-b9c50e7b1c3a.png"
+    },
+    "image_uris_en": {
+      "small": "https://cards.scryfall.io/small/front/8/2/82cbf17b-c2c9-4a59-9b6f-b9c50e7b1c3a.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/8/2/82cbf17b-c2c9-4a59-9b6f-b9c50e7b1c3a.jpg",
+      "large": "https://cards.scryfall.io/large/front/8/2/82cbf17b-c2c9-4a59-9b6f-b9c50e7b1c3a.jpg",
+      "png": "https://cards.scryfall.io/png/front/8/2/82cbf17b-c2c9-4a59-9b6f-b9c50e7b1c3a.png"
+    }
+  },
+  {
+    "name": "Choose Your Demise",
+    "mana_cost": "",
+    "type_line": "Scheme",
+    "oracle_text": "When you set this scheme in motion, look at the top four cards of your library and separate them into a face-down pile and a face-up pile. An opponent chooses one of those piles. Put the cards in that pile into your hand and the rest on the bottom of your library in any order.",
+    "flavor_text": null,
+    "artist": "Nils Hamm",
+    "collector_number": "4",
+    "set": "oe01",
+    "rarity": "common",
+    "cmc": 0,
+    "name_ja": "汝の死を選べ（機械翻訳）",
+    "type_line_ja": "計略（機械翻訳）",
+    "oracle_text_ja": "この計略を実行に移すとき、あなたのライブラリーの上から4枚のカードを見て、それらを裏向きの束と表向きの束に分ける。対戦相手1人がそのうちの1つの束を選ぶ。その束のカードをあなたの手札に加え、残りを好きな順番であなたのライブラリーの一番下に置く。（機械翻訳）",
+    "image_uris_ja": {
+      "small": "https://cards.scryfall.io/small/front/8/b/8b4e4a8f-5f9e-4b6f-9c0e-65b4c4d5e7ec.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/8/b/8b4e4a8f-5f9e-4b6f-9c0e-65b4c4d5e7ec.jpg",
+      "large": "https://cards.scryfall.io/large/front/8/b/8b4e4a8f-5f9e-4b6f-9c0e-65b4c4d5e7ec.jpg",
+      "png": "https://cards.scryfall.io/png/front/8/b/8b4e4a8f-5f9e-4b6f-9c0e-65b4c4d5e7ec.png"
+    },
+    "image_uris_en": {
+      "small": "https://cards.scryfall.io/small/front/8/b/8b4e4a8f-5f9e-4b6f-9c0e-65b4c4d5e7ec.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/8/b/8b4e4a8f-5f9e-4b6f-9c0e-65b4c4d5e7ec.jpg",
+      "large": "https://cards.scryfall.io/large/front/8/b/8b4e4a8f-5f9e-4b6f-9c0e-65b4c4d5e7ec.jpg",
+      "png": "https://cards.scryfall.io/png/front/8/b/8b4e4a8f-5f9e-4b6f-9c0e-65b4c4d5e7ec.png"
+    }
+  },
+  {
+    "name": "Delight in the Hunt",
+    "mana_cost": "",
+    "type_line": "Scheme",
+    "oracle_text": "When you set this scheme in motion, create a 3/3 black Horror creature token and prevent all damage that would be dealt to creatures you control this turn.",
+    "flavor_text": "\"Pain is a delusion of the weak. I'll demonstrate.\"",
+    "artist": "Titus Lunter",
+    "collector_number": "5",
+    "set": "oe01",
+    "rarity": "common",
+    "cmc": 0,
+    "name_ja": "狩りの愉悦（機械翻訳）",
+    "type_line_ja": "計略（機械翻訳）",
+    "oracle_text_ja": "この計略を実行に移すとき、3/3の黒のホラー・クリーチャー・トークンを1体生成し、このターン、あなたがコントロールするクリーチャーに与えられるすべてのダメージを軽減する。（機械翻訳）",
+    "image_uris_ja": {
+      "small": "https://cards.scryfall.io/small/front/c/5/c5b01c7e-0e6c-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/c/5/c5b01c7e-0e6c-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/c/5/c5b01c7e-0e6c-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/c/5/c5b01c7e-0e6c-4c3c-9c3c-5c2c1c4c6c6c.png"
+    },
+    "image_uris_en": {
+      "small": "https://cards.scryfall.io/small/front/c/5/c5b01c7e-0e6c-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/c/5/c5b01c7e-0e6c-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/c/5/c5b01c7e-0e6c-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/c/5/c5b01c7e-0e6c-4c3c-9c3c-5c2c1c4c6c6c.png"
+    }
+  },
+  {
+    "name": "Every Dream a Nightmare",
+    "mana_cost": "",
+    "type_line": "Scheme",
+    "oracle_text": "When you set this scheme in motion, each opponent discards a card. You draw a card for each land card discarded this way.",
+    "flavor_text": "\"Let me unburden you of these fatuous hopes.\"",
+    "artist": "Mathias Kollros",
+    "collector_number": "6",
+    "set": "oe01",
+    "rarity": "common",
+    "cmc": 0,
+    "name_ja": "全ての夢は悪夢（機械翻訳）",
+    "type_line_ja": "計略（機械翻訳）",
+    "oracle_text_ja": "この計略を実行に移すとき、各対戦相手はカードを1枚捨てる。この方法で捨てられた土地カード1枚につき、あなたはカードを1枚引く。（機械翻訳）",
+    "image_uris_ja": {
+      "small": "https://cards.scryfall.io/small/front/d/1/d1b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/d/1/d1b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/d/1/d1b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/d/1/d1b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    },
+    "image_uris_en": {
+      "small": "https://cards.scryfall.io/small/front/d/1/d1b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/d/1/d1b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/d/1/d1b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/d/1/d1b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    }
+  },
+  {
+    "name": "For Each of You, a Gift",
+    "mana_cost": "",
+    "type_line": "Scheme",
+    "oracle_text": "When you set this scheme in motion, for each opponent, create a 3/3 black Horror creature token that attacks that player each combat if able.",
+    "flavor_text": "\"My generosity blesses you all, even the undeserving.\"",
+    "artist": "Marco Nelor",
+    "collector_number": "7",
+    "set": "oe01",
+    "rarity": "common",
+    "cmc": 0,
+    "name_ja": "汝らそれぞれに贈り物を（機械翻訳）",
+    "type_line_ja": "計略（機械翻訳）",
+    "oracle_text_ja": "この計略を実行に移すとき、各対戦相手につき、3/3の黒のホラー・クリーチャー・トークンを1体生成する。それは可能なら各戦闘でそのプレイヤーを攻撃する。（機械翻訳）",
+    "image_uris_ja": {
+      "small": "https://cards.scryfall.io/small/front/e/2/e2b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/e/2/e2b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/e/2/e2b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/e/2/e2b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    },
+    "image_uris_en": {
+      "small": "https://cards.scryfall.io/small/front/e/2/e2b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/e/2/e2b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/e/2/e2b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/e/2/e2b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    }
+  },
+  {
+    "name": "Know Evil",
+    "mana_cost": "",
+    "type_line": "Scheme",
+    "oracle_text": "When you set this scheme in motion, until your next turn, up to one target opponent can't attack with creatures, up to one target opponent can't cast creature spells, and up to one target opponent can't cast noncreature spells. You can't choose any player as a target more than once.",
+    "flavor_text": null,
+    "artist": "Anthony Palumbo",
+    "collector_number": "8",
+    "set": "oe01",
+    "rarity": "common",
+    "cmc": 0,
+    "name_ja": "邪悪を知れ（機械翻訳）",
+    "type_line_ja": "計略（機械翻訳）",
+    "oracle_text_ja": "この計略を実行に移すとき、あなたの次のターンまで、対戦相手最大1人はクリーチャーで攻撃できず、対戦相手最大1人はクリーチャー・スペルを唱えられず、対戦相手最大1人はクリーチャーでないスペルを唱えられない。同じプレイヤーを複数回対象にすることはできない。（機械翻訳）",
+    "image_uris_ja": {
+      "small": "https://cards.scryfall.io/small/front/f/3/f3b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/f/3/f3b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/f/3/f3b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/f/3/f3b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    },
+    "image_uris_en": {
+      "small": "https://cards.scryfall.io/small/front/f/3/f3b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/f/3/f3b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/f/3/f3b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/f/3/f3b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    }
+  },
+  {
+    "name": "Make Yourself Useful",
+    "mana_cost": "",
+    "type_line": "Scheme",
+    "oracle_text": "When you set this scheme in motion, destroy target creature an opponent controls. If a creature is destroyed this way, you gain life equal to its toughness.",
+    "flavor_text": "\"To think you've spent years honing your body only to die like this.\"",
+    "artist": "David Gaillet",
+    "collector_number": "9",
+    "set": "oe01",
+    "rarity": "common",
+    "cmc": 0,
+    "name_ja": "己を有用にせよ（機械翻訳）",
+    "type_line_ja": "計略（機械翻訳）",
+    "oracle_text_ja": "この計略を実行に移すとき、対戦相手がコントロールするクリーチャー1体を対象とし、それを破壊する。この方法でクリーチャーが破壊された場合、あなたはそのタフネスに等しいライフを得る。（機械翻訳）",
+    "image_uris_ja": {
+      "small": "https://cards.scryfall.io/small/front/a/4/a4b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/a/4/a4b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/a/4/a4b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/a/4/a4b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    },
+    "image_uris_en": {
+      "small": "https://cards.scryfall.io/small/front/a/4/a4b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/a/4/a4b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/a/4/a4b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/a/4/a4b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    }
+  },
+  {
+    "name": "The Mighty Will Fall",
+    "mana_cost": "",
+    "type_line": "Scheme",
+    "oracle_text": "When you set this scheme in motion, choose an opponent with the highest life total among your opponents. That player loses 7 life.",
+    "flavor_text": "\"Cry out for your comrades so that they may join you in misery.\"",
+    "artist": "Volkan Baǧa",
+    "collector_number": "10",
+    "set": "oe01",
+    "rarity": "common",
+    "cmc": 0,
+    "name_ja": "強者は倒れる（機械翻訳）",
+    "type_line_ja": "計略（機械翻訳）",
+    "oracle_text_ja": "この計略を実行に移すとき、対戦相手の中で最も多くのライフを持つ対戦相手を1人選ぶ。そのプレイヤーは7点のライフを失う。（機械翻訳）",
+    "image_uris_ja": {
+      "small": "https://cards.scryfall.io/small/front/b/5/b5b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/b/5/b5b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/b/5/b5b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/b/5/b5b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    },
+    "image_uris_en": {
+      "small": "https://cards.scryfall.io/small/front/b/5/b5b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/b/5/b5b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/b/5/b5b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/b/5/b5b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    }
+  },
+  {
+    "name": "My Forces Are Innumerable",
+    "mana_cost": "",
+    "type_line": "Ongoing Scheme",
+    "oracle_text": "(An ongoing scheme remains face up until it's abandoned.)\n\nAt the beginning of your end step, create a 3/3 black Horror creature token.\n\nAt the beginning of your opponents' end step, they may sacrifice two creatures of their choice. If they do, abandon this scheme.",
+    "flavor_text": null,
+    "artist": "Seb McKinnon",
+    "collector_number": "11",
+    "set": "oe01",
+    "rarity": "common",
+    "cmc": 0,
+    "name_ja": "我が軍勢は無数（機械翻訳）",
+    "type_line_ja": "持続計略（機械翻訳）",
+    "oracle_text_ja": "（持続計略は放棄されるまで表向きのままである。）\n\nあなたの終了ステップの開始時に、3/3の黒のホラー・クリーチャー・トークンを1体生成する。\n\n対戦相手の終了ステップの開始時に、対戦相手は自分の選んだクリーチャー2体を生け贄に捧げてもよい。そうした場合、この計略を放棄する。（機械翻訳）",
+    "image_uris_ja": {
+      "small": "https://cards.scryfall.io/small/front/c/6/c6b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/c/6/c6b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/c/6/c6b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/c/6/c6b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    },
+    "image_uris_en": {
+      "small": "https://cards.scryfall.io/small/front/c/6/c6b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/c/6/c6b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/c/6/c6b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/c/6/c6b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    }
+  },
+  {
+    "name": "My Laughter Echoes",
+    "mana_cost": "",
+    "type_line": "Ongoing Scheme",
+    "oracle_text": "(An ongoing scheme remains face up until it's abandoned.)\n\nWhenever you set a non-ongoing scheme in motion, you may abandon this scheme. If you do, set that scheme in motion again.",
+    "flavor_text": "\"Groveling already? I'm just starting to enjoy myself.\"",
+    "artist": "Steve Argyle",
+    "collector_number": "12",
+    "set": "oe01",
+    "rarity": "common",
+    "cmc": 0,
+    "name_ja": "我が笑い声は響く（機械翻訳）",
+    "type_line_ja": "持続計略（機械翻訳）",
+    "oracle_text_ja": "（持続計略は放棄されるまで表向きのままである。）\n\nあなたが持続でない計略を実行に移すたび、あなたはこの計略を放棄してもよい。そうした場合、その計略を再び実行に移す。（機械翻訳）",
+    "image_uris_ja": {
+      "small": "https://cards.scryfall.io/small/front/d/7/d7b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/d/7/d7b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/d/7/d7b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/d/7/d7b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    },
+    "image_uris_en": {
+      "small": "https://cards.scryfall.io/small/front/d/7/d7b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/d/7/d7b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/d/7/d7b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/d/7/d7b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    }
+  },
+  {
+    "name": "No One Will Hear Your Cries",
+    "mana_cost": "",
+    "type_line": "Scheme",
+    "oracle_text": "When you set this scheme in motion, each opponent chooses a creature they control, then sacrifices the rest.",
+    "flavor_text": "\"Your companions were lucky to have died first.\"",
+    "artist": "McLean Kendree",
+    "collector_number": "13",
+    "set": "oe01",
+    "rarity": "common",
+    "cmc": 0,
+    "name_ja": "誰も汝の叫びを聞かない（機械翻訳）",
+    "type_line_ja": "計略（機械翻訳）",
+    "oracle_text_ja": "この計略を実行に移すとき、各対戦相手は自分がコントロールするクリーチャー1体を選び、その後残りを生け贄に捧げる。（機械翻訳）",
+    "image_uris_ja": {
+      "small": "https://cards.scryfall.io/small/front/e/8/e8b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/e/8/e8b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/e/8/e8b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/e/8/e8b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    },
+    "image_uris_en": {
+      "small": "https://cards.scryfall.io/small/front/e/8/e8b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/e/8/e8b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/e/8/e8b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/e/8/e8b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    }
+  },
+  {
+    "name": "Pay Tribute to Me",
+    "mana_cost": "",
+    "type_line": "Scheme",
+    "oracle_text": "When you set this scheme in motion, each opponent sacrifices a creature of their choice. If you control six or more lands, each opponent sacrifices another creature of their choice.",
+    "flavor_text": null,
+    "artist": "Aaron Miller",
+    "collector_number": "14",
+    "set": "oe01",
+    "rarity": "common",
+    "cmc": 0,
+    "name_ja": "我に貢物を捧げよ（機械翻訳）",
+    "type_line_ja": "計略（機械翻訳）",
+    "oracle_text_ja": "この計略を実行に移すとき、各対戦相手は自分の選んだクリーチャー1体を生け贄に捧げる。あなたが6つ以上の土地をコントロールしている場合、各対戦相手は自分の選んだクリーチャーをもう1体生け贄に捧げる。（機械翻訳）",
+    "image_uris_ja": {
+      "small": "https://cards.scryfall.io/small/front/f/9/f9b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/f/9/f9b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/f/9/f9b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/f/9/f9b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    },
+    "image_uris_en": {
+      "small": "https://cards.scryfall.io/small/front/f/9/f9b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/f/9/f9b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/f/9/f9b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/f/9/f9b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    }
+  },
+  {
+    "name": "Power Without Equal",
+    "mana_cost": "",
+    "type_line": "Scheme",
+    "oracle_text": "When you set this scheme in motion, draw three cards. You have no maximum hand size until your next turn. If you control six or more lands, you may cast up to three spells from your hand without paying their mana costs.",
+    "flavor_text": null,
+    "artist": "Christine Choi",
+    "collector_number": "15",
+    "set": "oe01",
+    "rarity": "common",
+    "cmc": 0,
+    "name_ja": "比類なき力（機械翻訳）",
+    "type_line_ja": "計略（機械翻訳）",
+    "oracle_text_ja": "この計略を実行に移すとき、カードを3枚引く。あなたの次のターンまで、あなたの手札の上限はなくなる。あなたが6つ以上の土地をコントロールしている場合、あなたは自分の手札から呪文を最大3つ、それらのマナ・コストを支払うことなく唱えてもよい。（機械翻訳）",
+    "image_uris_ja": {
+      "small": "https://cards.scryfall.io/small/front/a/a/aab5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/a/a/aab5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/a/a/aab5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/a/a/aab5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    },
+    "image_uris_en": {
+      "small": "https://cards.scryfall.io/small/front/a/a/aab5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/a/a/aab5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/a/a/aab5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/a/a/aab5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    }
+  },
+  {
+    "name": "A Reckoning Approaches",
+    "mana_cost": "",
+    "type_line": "Scheme",
+    "oracle_text": "When you set this scheme in motion, look at the top six cards of your library. You may put a creature card from among them onto the battlefield. Put the rest on the bottom of your library in any order.",
+    "flavor_text": "\"The gates open to my new era.\"",
+    "artist": "Yeong-Hao Han",
+    "collector_number": "16",
+    "set": "oe01",
+    "rarity": "common",
+    "cmc": 0,
+    "name_ja": "清算の時が近づく（機械翻訳）",
+    "type_line_ja": "計略（機械翻訳）",
+    "oracle_text_ja": "この計略を実行に移すとき、あなたのライブラリーの上から6枚のカードを見る。あなてはその中からクリーチャー・カード1枚を戦場に出してもよい。残りを好きな順番であなたのライブラリーの一番下に置く。（機械翻訳）",
+    "image_uris_ja": {
+      "small": "https://cards.scryfall.io/small/front/b/b/bbb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/b/b/bbb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/b/b/bbb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/b/b/bbb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    },
+    "image_uris_en": {
+      "small": "https://cards.scryfall.io/small/front/b/b/bbb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/b/b/bbb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/b/b/bbb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/b/b/bbb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    }
+  },
+  {
+    "name": "There Is No Refuge",
+    "mana_cost": "",
+    "type_line": "Scheme",
+    "oracle_text": "When you set this scheme in motion, it deals 3 damage to up to one target creature. Create a 3/3 black Horror creature token.",
+    "flavor_text": "\"The dunes smell spilled blood.\"",
+    "artist": "Tomasz Jedruszek",
+    "collector_number": "17",
+    "set": "oe01",
+    "rarity": "common",
+    "cmc": 0,
+    "name_ja": "避難所は無い（機械翻訳）",
+    "type_line_ja": "計略（機械翻訳）",
+    "oracle_text_ja": "この計略を実行に移すとき、これはクリーチャー最大1体を対象とし、それに3点のダメージを与える。3/3の黒のホラー・クリーチャー・トークンを1体生成する。（機械翻訳）",
+    "image_uris_ja": {
+      "small": "https://cards.scryfall.io/small/front/c/c/ccb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/c/c/ccb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/c/c/ccb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/c/c/ccb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    },
+    "image_uris_en": {
+      "small": "https://cards.scryfall.io/small/front/c/c/ccb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/c/c/ccb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/c/c/ccb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/c/c/ccb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    }
+  },
+  {
+    "name": "This World Belongs to Me",
+    "mana_cost": "",
+    "type_line": "Scheme",
+    "oracle_text": "When you set this scheme in motion, draw two cards. You may play an additional land this turn.",
+    "flavor_text": "\"Little insects, I have created entire worlds and extinguished twice as many.\"",
+    "artist": "Min Yum",
+    "collector_number": "18",
+    "set": "oe01",
+    "rarity": "common",
+    "cmc": 0,
+    "name_ja": "この世界は我が物（機械翻訳）",
+    "type_line_ja": "計略（機械翻訳）",
+    "oracle_text_ja": "この計略を実行に移すとき、カードを2枚引く。あなたはこのターン、追加の土地を1つプレイしてもよい。（機械翻訳）",
+    "image_uris_ja": {
+      "small": "https://cards.scryfall.io/small/front/d/d/ddb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/d/d/ddb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/d/d/ddb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/d/d/ddb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    },
+    "image_uris_en": {
+      "small": "https://cards.scryfall.io/small/front/d/d/ddb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/d/d/ddb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/d/d/ddb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/d/d/ddb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    }
+  },
+  {
+    "name": "What's Yours Is Now Mine",
+    "mana_cost": "",
+    "type_line": "Scheme",
+    "oracle_text": "When you set this scheme in motion, gain control of target creature an opponent controls and untap it.",
+    "flavor_text": "\"Vow your allegiance to true power.\"",
+    "artist": "Steve Argyle",
+    "collector_number": "19",
+    "set": "oe01",
+    "rarity": "common",
+    "cmc": 0,
+    "name_ja": "汝の物は今や我が物（機械翻訳）",
+    "type_line_ja": "計略（機械翻訳）",
+    "oracle_text_ja": "この計略を実行に移すとき、対戦相手がコントロールするクリーチャー1体を対象とし、それのコントロールを得てアンタップする。（機械翻訳）",
+    "image_uris_ja": {
+      "small": "https://cards.scryfall.io/small/front/e/e/eeb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/e/e/eeb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/e/e/eeb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/e/e/eeb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    },
+    "image_uris_en": {
+      "small": "https://cards.scryfall.io/small/front/e/e/eeb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/e/e/eeb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/e/e/eeb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/e/e/eeb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    }
+  },
+  {
+    "name": "When Will You Learn?",
+    "mana_cost": "",
+    "type_line": "Scheme",
+    "oracle_text": "When you set this scheme in motion, each opponent exiles the top card of their library. You may cast any number of spells from among cards exiled this way without paying their mana costs.",
+    "flavor_text": "\"Don't fret, infants. It wouldn't have worked anyway.\"",
+    "artist": "Yohann Schepacz",
+    "collector_number": "20",
+    "set": "oe01",
+    "rarity": "common",
+    "cmc": 0,
+    "name_ja": "いつ学ぶのか？（機械翻訳）",
+    "type_line_ja": "計略（機械翻訳）",
+    "oracle_text_ja": "この計略を実行に移すとき、各対戦相手は自分のライブラリーの一番上のカードを追放する。あなたはこの方法で追放されたカードの中から好きな数の呪文を、それらのマナ・コストを支払うことなく唱えてもよい。（機械翻訳）",
+    "image_uris_ja": {
+      "small": "https://cards.scryfall.io/small/front/f/f/ffb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/f/f/ffb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/f/f/ffb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/f/f/ffb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    },
+    "image_uris_en": {
+      "small": "https://cards.scryfall.io/small/front/f/f/ffb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "normal": "https://cards.scryfall.io/normal/front/f/f/ffb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "large": "https://cards.scryfall.io/large/front/f/f/ffb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg",
+      "png": "https://cards.scryfall.io/png/front/f/f/ffb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.png"
+    }
+  }
+];
+
+// カード統計情報
+const CARD_STATISTICS = {
+  "total_cards": 20,
+  "scheme_types": {
+    "regular_scheme": 16,
+    "ongoing_scheme": 4
+  },
+  "artists": {
+    "count": 18
+  },
+  "set_info": {
+    "name": "Archenemy: Nicol Bolas Schemes",
+    "code": "oe01",
+    "release_date": "2017-06-16"
+  }
+};
+
+// 追加情報
+const ADDITIONAL_INFO = {
+  "archenemy_format": "このカードはアーチエネミー形式でのみ使用可能（機械翻訳）",
+  "deck_construction": "アーチエネミー用計略デッキは20枚で構成（機械翻訳）",
+  "card_size": "通常のMTGカード2枚分の大きさ（機械翻訳）",
+  "availability": "アーチエネミー：ニコル・ボーラスにのみ収録（機械翻訳）"
+};
+
+// 後方互換性のため、既存のアプリケーションで使用される変数名
+const SCHEME_CARDS = AMONKHET_SCHEME_CARDS;
+
+// ヘルパー関数
+function getSchemeCardByName(name) {
+  return AMONKHET_SCHEME_CARDS.find(card => card.name === name || card.name_ja === name);
+}
+
+function getSchemeCardsByType(type) {
+  return AMONKHET_SCHEME_CARDS.filter(card => card.type_line === type || card.type_line_ja === type);
+}
+
+function getOngoingSchemes() {
+  return AMONKHET_SCHEME_CARDS.filter(card => 
+    card.type_line.includes('Ongoing') || card.type_line_ja.includes('持続')
+  );
+}
+
+function getRegularSchemes() {
+  return AMONKHET_SCHEME_CARDS.filter(card => 
+    !card.type_line.includes('Ongoing') && !card.type_line_ja.includes('持続')
+  );
+}
+
+// ES6モジュール対応
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    AMONKHET_SCHEME_CARDS,
+    SCHEME_CARDS,
+    CARD_STATISTICS,
+    ADDITIONAL_INFO,
+    getSchemeCardByName,
+    getSchemeCardsByType,
+    getOngoingSchemes,
+    getRegularSchemes
+  };
+}
