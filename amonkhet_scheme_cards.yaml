@@ -14,7 +14,14 @@ scheme_cards:
   set: oe01
   rarity: common
   cmc: 0
-  image_uris:
+  name_ja: 我が意志により（機械翻訳）
+  type_line_ja: 持続計略（機械翻訳）
+  oracle_text_ja: '（持続計略は放棄されるまで表向きのままである。）
+
+    あなたが唱える呪文のコストは{1}少なくなる。
+
+    対戦相手の終了ステップの開始時に、そのターンに対戦相手が4つ以上の呪文を唱えていた場合、この計略を放棄する。（機械翻訳）'
+  image_uris_ja:
     small: https://cards.scryfall.io/small/front/a/b/ab9016e5-f64f-4574-bf30-da0456b1ddec.jpg
     normal: https://cards.scryfall.io/normal/front/a/b/ab9016e5-f64f-4574-bf30-da0456b1ddec.jpg
     large: https://cards.scryfall.io/large/front/a/b/ab9016e5-f64f-4574-bf30-da0456b1ddec.jpg
@@ -32,7 +39,10 @@ scheme_cards:
   set: oe01
   rarity: common
   cmc: 0
-  image_uris:
+  name_ja: 我が威光を見よ（機械翻訳）
+  type_line_ja: 計略（機械翻訳）
+  oracle_text_ja: この計略を実行に移すとき、{U}{B}{R}を加える。この計略を実行に移すとき、あなたが6つ以上の土地をコントロールしている場合、あなたはライブラリーから点数で見たマナ・コストが6以上のカードを1枚探し、それを公開し、あなたの手札に加え、その後ライブラリーを切り直してもよい。（機械翻訳）
+  image_uris_ja:
     small: https://cards.scryfall.io/small/front/4/c/4c7c4ac6-de9c-4040-8b6a-c0d2b074c6d7.jpg
     normal: https://cards.scryfall.io/normal/front/4/c/4c7c4ac6-de9c-4040-8b6a-c0d2b074c6d7.jpg
     large: https://cards.scryfall.io/large/front/4/c/4c7c4ac6-de9c-4040-8b6a-c0d2b074c6d7.jpg
@@ -54,7 +64,14 @@ scheme_cards:
   set: oe01
   rarity: common
   cmc: 0
-  image_uris:
+  name_ja: 我が命令に屈せよ（機械翻訳）
+  type_line_ja: 持続計略（機械翻訳）
+  oracle_text_ja: '（持続計略は放棄されるまで表向きのままである。）
+
+    この計略を実行に移すとき、対戦相手1人を選ぶ。その選ばれたプレイヤーがコントロールするクリーチャーは、あなたやあなたがコントロールするプレインズウォーカーを攻撃できない。
+
+    対戦相手の終了ステップの開始時に、対戦相手は自分がコントロールするアンタップ状態のクリーチャーを、パワーの合計が8以上になるよう好きな数タップしてもよい。そうした場合、この計略を放棄する。（機械翻訳）'
+  image_uris_ja:
     small: https://cards.scryfall.io/small/front/8/2/82cbf17b-c2c9-4a59-9b6f-b9c50e7b1c3a.jpg
     normal: https://cards.scryfall.io/normal/front/8/2/82cbf17b-c2c9-4a59-9b6f-b9c50e7b1c3a.jpg
     large: https://cards.scryfall.io/large/front/8/2/82cbf17b-c2c9-4a59-9b6f-b9c50e7b1c3a.jpg
@@ -72,7 +89,10 @@ scheme_cards:
   set: oe01
   rarity: common
   cmc: 0
-  image_uris:
+  name_ja: 汝の死を選べ（機械翻訳）
+  type_line_ja: 計略（機械翻訳）
+  oracle_text_ja: この計略を実行に移すとき、あなたのライブラリーの上から4枚のカードを見て、それらを裏向きの束と表向きの束に分ける。対戦相手1人がそのうちの1つの束を選ぶ。その束のカードをあなたの手札に加え、残りを好きな順番であなたのライブラリーの一番下に置く。（機械翻訳）
+  image_uris_ja:
     small: https://cards.scryfall.io/small/front/8/b/8b4e4a8f-5f9e-4b6f-9c0e-65b4c4d5e7ec.jpg
     normal: https://cards.scryfall.io/normal/front/8/b/8b4e4a8f-5f9e-4b6f-9c0e-65b4c4d5e7ec.jpg
     large: https://cards.scryfall.io/large/front/8/b/8b4e4a8f-5f9e-4b6f-9c0e-65b4c4d5e7ec.jpg
@@ -89,7 +109,10 @@ scheme_cards:
   set: oe01
   rarity: common
   cmc: 0
-  image_uris:
+  name_ja: 狩りの愉悦（機械翻訳）
+  type_line_ja: 計略（機械翻訳）
+  oracle_text_ja: この計略を実行に移すとき、3/3の黒のホラー・クリーチャー・トークンを1体生成し、このターン、あなたがコントロールするクリーチャーに与えられるすべてのダメージを軽減する。（機械翻訳）
+  image_uris_ja:
     small: https://cards.scryfall.io/small/front/c/5/c5b01c7e-0e6c-4c3c-9c3c-5c2c1c4c6c6c.jpg
     normal: https://cards.scryfall.io/normal/front/c/5/c5b01c7e-0e6c-4c3c-9c3c-5c2c1c4c6c6c.jpg
     large: https://cards.scryfall.io/large/front/c/5/c5b01c7e-0e6c-4c3c-9c3c-5c2c1c4c6c6c.jpg
@@ -105,7 +128,10 @@ scheme_cards:
   set: oe01
   rarity: common
   cmc: 0
-  image_uris:
+  name_ja: 全ての夢は悪夢（機械翻訳）
+  type_line_ja: 計略（機械翻訳）
+  oracle_text_ja: この計略を実行に移すとき、各対戦相手はカードを1枚捨てる。この方法で捨てられた土地カード1枚につき、あなたはカードを1枚引く。（機械翻訳）
+  image_uris_ja:
     small: https://cards.scryfall.io/small/front/d/1/d1b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     normal: https://cards.scryfall.io/normal/front/d/1/d1b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     large: https://cards.scryfall.io/large/front/d/1/d1b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
@@ -121,7 +147,10 @@ scheme_cards:
   set: oe01
   rarity: common
   cmc: 0
-  image_uris:
+  name_ja: 汝らそれぞれに贈り物を（機械翻訳）
+  type_line_ja: 計略（機械翻訳）
+  oracle_text_ja: この計略を実行に移すとき、各対戦相手につき、3/3の黒のホラー・クリーチャー・トークンを1体生成する。それは可能なら各戦闘でそのプレイヤーを攻撃する。（機械翻訳）
+  image_uris_ja:
     small: https://cards.scryfall.io/small/front/e/2/e2b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     normal: https://cards.scryfall.io/normal/front/e/2/e2b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     large: https://cards.scryfall.io/large/front/e/2/e2b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
@@ -139,7 +168,10 @@ scheme_cards:
   set: oe01
   rarity: common
   cmc: 0
-  image_uris:
+  name_ja: 邪悪を知れ（機械翻訳）
+  type_line_ja: 計略（機械翻訳）
+  oracle_text_ja: この計略を実行に移すとき、あなたの次のターンまで、対戦相手最大1人はクリーチャーで攻撃できず、対戦相手最大1人はクリーチャー・スペルを唱えられず、対戦相手最大1人はクリーチャーでないスペルを唱えられない。同じプレイヤーを複数回対象にすることはできない。（機械翻訳）
+  image_uris_ja:
     small: https://cards.scryfall.io/small/front/f/3/f3b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     normal: https://cards.scryfall.io/normal/front/f/3/f3b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     large: https://cards.scryfall.io/large/front/f/3/f3b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
@@ -155,7 +187,10 @@ scheme_cards:
   set: oe01
   rarity: common
   cmc: 0
-  image_uris:
+  name_ja: 己を有用にせよ（機械翻訳）
+  type_line_ja: 計略（機械翻訳）
+  oracle_text_ja: この計略を実行に移すとき、対戦相手がコントロールするクリーチャー1体を対象とし、それを破壊する。この方法でクリーチャーが破壊された場合、あなたはそのタフネスに等しいライフを得る。（機械翻訳）
+  image_uris_ja:
     small: https://cards.scryfall.io/small/front/a/4/a4b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     normal: https://cards.scryfall.io/normal/front/a/4/a4b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     large: https://cards.scryfall.io/large/front/a/4/a4b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
@@ -171,7 +206,10 @@ scheme_cards:
   set: oe01
   rarity: common
   cmc: 0
-  image_uris:
+  name_ja: 強者は倒れる（機械翻訳）
+  type_line_ja: 計略（機械翻訳）
+  oracle_text_ja: この計略を実行に移すとき、対戦相手の中で最も多くのライフを持つ対戦相手を1人選ぶ。そのプレイヤーは7点のライフを失う。（機械翻訳）
+  image_uris_ja:
     small: https://cards.scryfall.io/small/front/b/5/b5b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     normal: https://cards.scryfall.io/normal/front/b/5/b5b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     large: https://cards.scryfall.io/large/front/b/5/b5b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
@@ -191,7 +229,14 @@ scheme_cards:
   set: oe01
   rarity: common
   cmc: 0
-  image_uris:
+  name_ja: 我が軍勢は無数（機械翻訳）
+  type_line_ja: 持続計略（機械翻訳）
+  oracle_text_ja: '（持続計略は放棄されるまで表向きのままである。）
+
+    あなたの終了ステップの開始時に、3/3の黒のホラー・クリーチャー・トークンを1体生成する。
+
+    対戦相手の終了ステップの開始時に、対戦相手は自分の選んだクリーチャー2体を生け贄に捧げてもよい。そうした場合、この計略を放棄する。（機械翻訳）'
+  image_uris_ja:
     small: https://cards.scryfall.io/small/front/c/6/c6b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     normal: https://cards.scryfall.io/normal/front/c/6/c6b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     large: https://cards.scryfall.io/large/front/c/6/c6b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
@@ -209,7 +254,12 @@ scheme_cards:
   set: oe01
   rarity: common
   cmc: 0
-  image_uris:
+  name_ja: 我が笑い声は響く（機械翻訳）
+  type_line_ja: 持続計略（機械翻訳）
+  oracle_text_ja: '（持続計略は放棄されるまで表向きのままである。）
+
+    あなたが持続でない計略を実行に移すたび、あなたはこの計略を放棄してもよい。そうした場合、その計略を再び実行に移す。（機械翻訳）'
+  image_uris_ja:
     small: https://cards.scryfall.io/small/front/d/7/d7b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     normal: https://cards.scryfall.io/normal/front/d/7/d7b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     large: https://cards.scryfall.io/large/front/d/7/d7b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
@@ -225,7 +275,10 @@ scheme_cards:
   set: oe01
   rarity: common
   cmc: 0
-  image_uris:
+  name_ja: 誰も汝の叫びを聞かない（機械翻訳）
+  type_line_ja: 計略（機械翻訳）
+  oracle_text_ja: この計略を実行に移すとき、各対戦相手は自分がコントロールするクリーチャー1体を選び、その後残りを生け贄に捧げる。（機械翻訳）
+  image_uris_ja:
     small: https://cards.scryfall.io/small/front/e/8/e8b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     normal: https://cards.scryfall.io/normal/front/e/8/e8b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     large: https://cards.scryfall.io/large/front/e/8/e8b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
@@ -242,7 +295,10 @@ scheme_cards:
   set: oe01
   rarity: common
   cmc: 0
-  image_uris:
+  name_ja: 我に貢物を捧げよ（機械翻訳）
+  type_line_ja: 計略（機械翻訳）
+  oracle_text_ja: この計略を実行に移すとき、各対戦相手は自分の選んだクリーチャー1体を生け贄に捧げる。あなたが6つ以上の土地をコントロールしている場合、各対戦相手は自分の選んだクリーチャーをもう1体生け贄に捧げる。（機械翻訳）
+  image_uris_ja:
     small: https://cards.scryfall.io/small/front/f/9/f9b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     normal: https://cards.scryfall.io/normal/front/f/9/f9b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     large: https://cards.scryfall.io/large/front/f/9/f9b5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
@@ -259,7 +315,10 @@ scheme_cards:
   set: oe01
   rarity: common
   cmc: 0
-  image_uris:
+  name_ja: 比類なき力（機械翻訳）
+  type_line_ja: 計略（機械翻訳）
+  oracle_text_ja: この計略を実行に移すとき、カードを3枚引く。あなたの次のターンまで、あなたの手札の上限はなくなる。あなたが6つ以上の土地をコントロールしている場合、あなたは自分の手札から呪文を最大3つ、それらのマナ・コストを支払うことなく唱えてもよい。（機械翻訳）
+  image_uris_ja:
     small: https://cards.scryfall.io/small/front/a/a/aab5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     normal: https://cards.scryfall.io/normal/front/a/a/aab5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     large: https://cards.scryfall.io/large/front/a/a/aab5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
@@ -276,7 +335,10 @@ scheme_cards:
   set: oe01
   rarity: common
   cmc: 0
-  image_uris:
+  name_ja: 清算の時が近づく（機械翻訳）
+  type_line_ja: 計略（機械翻訳）
+  oracle_text_ja: この計略を実行に移すとき、あなたのライブラリーの上から6枚のカードを見る。あなてはその中からクリーチャー・カード1枚を戦場に出してもよい。残りを好きな順番であなたのライブラリーの一番下に置く。（機械翻訳）
+  image_uris_ja:
     small: https://cards.scryfall.io/small/front/b/b/bbb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     normal: https://cards.scryfall.io/normal/front/b/b/bbb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     large: https://cards.scryfall.io/large/front/b/b/bbb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
@@ -292,7 +354,10 @@ scheme_cards:
   set: oe01
   rarity: common
   cmc: 0
-  image_uris:
+  name_ja: 避難所は無い（機械翻訳）
+  type_line_ja: 計略（機械翻訳）
+  oracle_text_ja: この計略を実行に移すとき、これはクリーチャー最大1体を対象とし、それに3点のダメージを与える。3/3の黒のホラー・クリーチャー・トークンを1体生成する。（機械翻訳）
+  image_uris_ja:
     small: https://cards.scryfall.io/small/front/c/c/ccb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     normal: https://cards.scryfall.io/normal/front/c/c/ccb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     large: https://cards.scryfall.io/large/front/c/c/ccb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
@@ -309,7 +374,10 @@ scheme_cards:
   set: oe01
   rarity: common
   cmc: 0
-  image_uris:
+  name_ja: この世界は我が物（機械翻訳）
+  type_line_ja: 計略（機械翻訳）
+  oracle_text_ja: この計略を実行に移すとき、カードを2枚引く。あなたはこのターン、追加の土地を1つプレイしてもよい。（機械翻訳）
+  image_uris_ja:
     small: https://cards.scryfall.io/small/front/d/d/ddb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     normal: https://cards.scryfall.io/normal/front/d/d/ddb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     large: https://cards.scryfall.io/large/front/d/d/ddb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
@@ -325,7 +393,10 @@ scheme_cards:
   set: oe01
   rarity: common
   cmc: 0
-  image_uris:
+  name_ja: 汝の物は今や我が物（機械翻訳）
+  type_line_ja: 計略（機械翻訳）
+  oracle_text_ja: この計略を実行に移すとき、対戦相手がコントロールするクリーチャー1体を対象とし、それのコントロールを得てアンタップする。（機械翻訳）
+  image_uris_ja:
     small: https://cards.scryfall.io/small/front/e/e/eeb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     normal: https://cards.scryfall.io/normal/front/e/e/eeb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     large: https://cards.scryfall.io/large/front/e/e/eeb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
@@ -342,7 +413,10 @@ scheme_cards:
   set: oe01
   rarity: common
   cmc: 0
-  image_uris:
+  name_ja: いつ学ぶのか？（機械翻訳）
+  type_line_ja: 計略（機械翻訳）
+  oracle_text_ja: この計略を実行に移すとき、各対戦相手は自分のライブラリーの一番上のカードを追放する。あなたはこの方法で追放されたカードの中から好きな数の呪文を、それらのマナ・コストを支払うことなく唱えてもよい。（機械翻訳）
+  image_uris_ja:
     small: https://cards.scryfall.io/small/front/f/f/ffb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     normal: https://cards.scryfall.io/normal/front/f/f/ffb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
     large: https://cards.scryfall.io/large/front/f/f/ffb5c8a9-1c8b-4c3c-9c3c-5c2c1c4c6c6c.jpg
@@ -359,8 +433,8 @@ card_statistics:
     code: oe01
     release_date: '2017-06-16'
 additional_info:
-  archenemy_format: このカードはアーチエネミー形式でのみ使用可能
-  deck_construction: アーチエネミー用計略デッキは20枚で構成
-  card_size: 通常のMTGカード2枚分の大きさ
-  availability: アーチエネミー：ニコル・ボーラスにのみ収録
+  archenemy_format: このカードはアーチエネミー形式でのみ使用可能（機械翻訳）
+  deck_construction: アーチエネミー用計略デッキは20枚で構成（機械翻訳）
+  card_size: 通常のMTGカード2枚分の大きさ（機械翻訳）
+  availability: アーチエネミー：ニコル・ボーラスにのみ収録（機械翻訳）
   data_source: scryfall
