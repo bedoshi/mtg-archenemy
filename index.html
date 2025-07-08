@@ -11,10 +11,17 @@
     <div class="container">
         <header class="header">
             <h1>MTG Archenemy</h1>
-            <p>Duskmourn: House of Horror - Scheme Cards</p>
+            <p id="header-subtitle">Duskmourn: House of Horror - Scheme Cards</p>
         </header>
 
         <div class="controls">
+            <div class="set-selector">
+                <label for="set-selector">セット選択:</label>
+                <select id="set-selector" class="set-dropdown">
+                    <option value="duskmourn">Duskmourn: House of Horror</option>
+                    <option value="amonkhet">Archenemy: Nicol Bolas</option>
+                </select>
+            </div>
             <button class="btn" id="next-scheme">次の計略</button>
             <button class="btn secondary" id="reset-game">ゲームリセット</button>
             <button class="btn secondary" id="used-cards-control-btn" style="display: none;">過去の計略を見る</button>
@@ -72,6 +79,7 @@
     </div>
 
     <script src="duskmourn_scheme_data.js"></script>
+    <script src="amonkhet_scheme_data.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

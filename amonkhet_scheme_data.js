@@ -547,7 +547,7 @@ const AMONKHET_SCHEME_CARDS = [
 ];
 
 // カード統計情報
-const CARD_STATISTICS = {
+const AMONKHET_CARD_STATISTICS = {
   "total_cards": 20,
   "scheme_types": {
     "regular_scheme": 16,
@@ -564,7 +564,7 @@ const CARD_STATISTICS = {
 };
 
 // 追加情報
-const ADDITIONAL_INFO = {
+const AMONKHET_ADDITIONAL_INFO = {
   "archenemy_format": "このカードはアーチエネミー形式でのみ使用可能（機械翻訳）",
   "deck_construction": "アーチエネミー用計略デッキは20枚で構成（機械翻訳）",
   "card_size": "通常のMTGカード2枚分の大きさ（機械翻訳）",
@@ -572,39 +572,42 @@ const ADDITIONAL_INFO = {
 };
 
 // 後方互換性のため、既存のアプリケーションで使用される変数名
-const SCHEME_CARDS = AMONKHET_SCHEME_CARDS;
+const AMONKHET_SCHEME_CARDS_ALIAS = AMONKHET_SCHEME_CARDS;
 
 // ヘルパー関数
-function getSchemeCardByName(name) {
+function getAmonkhetSchemeCardByName(name) {
   return AMONKHET_SCHEME_CARDS.find(card => card.name === name || card.name_ja === name);
 }
 
-function getSchemeCardsByType(type) {
+function getAmonkhetSchemeCardsByType(type) {
   return AMONKHET_SCHEME_CARDS.filter(card => card.type_line === type || card.type_line_ja === type);
 }
 
-function getOngoingSchemes() {
+function getAmonkhetOngoingSchemes() {
   return AMONKHET_SCHEME_CARDS.filter(card => 
     card.type_line.includes('Ongoing') || card.type_line_ja.includes('持続')
   );
 }
 
-function getRegularSchemes() {
+function getAmonkhetRegularSchemes() {
   return AMONKHET_SCHEME_CARDS.filter(card => 
     !card.type_line.includes('Ongoing') && !card.type_line_ja.includes('持続')
   );
 }
 
+// グローバル変数として公開 (ブラウザ環境での使用のため)
+window.AMONKHET_SCHEME_CARDS = AMONKHET_SCHEME_CARDS;
+
 // ES6モジュール対応
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
     AMONKHET_SCHEME_CARDS,
-    SCHEME_CARDS,
-    CARD_STATISTICS,
-    ADDITIONAL_INFO,
-    getSchemeCardByName,
-    getSchemeCardsByType,
-    getOngoingSchemes,
-    getRegularSchemes
+    AMONKHET_SCHEME_CARDS_ALIAS,
+    AMONKHET_CARD_STATISTICS,
+    AMONKHET_ADDITIONAL_INFO,
+    getAmonkhetSchemeCardByName,
+    getAmonkhetSchemeCardsByType,
+    getAmonkhetOngoingSchemes,
+    getAmonkhetRegularSchemes
   };
 }

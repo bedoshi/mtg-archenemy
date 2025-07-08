@@ -16,7 +16,9 @@ const GAME_CONSTANTS = {
         TOTAL_CARDS_SECTION: 'total-cards-section',
         ONGOING_CARDS_SECTION: 'ongoing-cards-section',
         REGULAR_CARDS_SECTION: 'regular-cards-section',
-        REMAINING_CARDS: 'remaining-cards'
+        REMAINING_CARDS: 'remaining-cards',
+        SET_SELECTOR: 'set-selector',
+        HEADER_SUBTITLE: 'header-subtitle'
     },
     SELECTORS: {
         MODAL_TITLE: '.modal-title'
@@ -57,7 +59,9 @@ const GAME_CONSTANTS = {
  */
 class ArchenemyGame {
     constructor() {
-        this.schemes = [...DUSKMOURN_SCHEME_CARDS];
+        this.currentSet = 'duskmourn'; // Default to duskmourn
+        this.currentSchemeCards = window.DUSKMOURN_SCHEME_CARDS;
+        this.schemes = [...this.currentSchemeCards];
         this.usedSchemes = [];
         this.currentScheme = null;
         this.ongoingSchemes = [];
@@ -73,6 +77,7 @@ class ArchenemyGame {
         this.shuffleDeck();
         this.initializeEventListeners();
         this.updateStats();
+        this.updateHeaderSubtitle();
     }
 
     /**
@@ -137,6 +142,7 @@ class ArchenemyGame {
         const undoSchemeBtn = this.getElement(GAME_CONSTANTS.ELEMENT_IDS.UNDO_SCHEME);
         const resetGameBtn = this.getElement(GAME_CONSTANTS.ELEMENT_IDS.RESET_GAME);
         const languageSwitch = this.getElement(GAME_CONSTANTS.ELEMENT_IDS.LANGUAGE_SWITCH);
+        const setSelector = this.getElement(GAME_CONSTANTS.ELEMENT_IDS.SET_SELECTOR);
 
         if (nextSchemeBtn) {
             nextSchemeBtn.addEventListener('click', () => this.drawNextScheme());
@@ -156,6 +162,12 @@ class ArchenemyGame {
                 if (this.currentScheme) {
                     this.displayScheme(this.currentScheme);
                 }
+            });
+        }
+
+        if (setSelector) {
+            setSelector.addEventListener('change', (e) => {
+                this.changeSet(e.target.value);
             });
         }
     }
@@ -368,7 +380,7 @@ class ArchenemyGame {
      * Initialize game state to defaults
      */
     initializeGameState() {
-        this.schemes = [...DUSKMOURN_SCHEME_CARDS];
+        this.schemes = [...this.currentSchemeCards];
         this.usedSchemes = [];
         this.currentScheme = null;
         this.ongoingSchemes = [];
@@ -404,21 +416,28 @@ class ArchenemyGame {
      * @returns {string} HTML string for initial screen
      */
     generateInitialScreenHTML() {
+        // Calculate statistics for the current set
+        const totalCards = this.currentSchemeCards.length;
+        const ongoingCards = this.currentSchemeCards.filter(card => 
+            card.type_line.includes('Ongoing') || card.type_line_ja.includes('持続')
+        ).length;
+        const regularCards = totalCards - ongoingCards;
+        
         return `
             <div class="welcome-message">
                 ${GAME_CONSTANTS.MESSAGES.GAME_START}
             </div>
             <div class="stats">
                 <div class="stat-card clickable" id="${GAME_CONSTANTS.ELEMENT_IDS.TOTAL_CARDS_SECTION}">
-                    <div class="stat-number">40</div>
+                    <div class="stat-number" id="total-cards">${totalCards}</div>
                     <div class="stat-label">総計略カード数</div>
                 </div>
                 <div class="stat-card clickable" id="${GAME_CONSTANTS.ELEMENT_IDS.ONGOING_CARDS_SECTION}">
-                    <div class="stat-number">12</div>
+                    <div class="stat-number" id="ongoing-cards">${ongoingCards}</div>
                     <div class="stat-label">持続計略</div>
                 </div>
                 <div class="stat-card clickable" id="${GAME_CONSTANTS.ELEMENT_IDS.REGULAR_CARDS_SECTION}">
-                    <div class="stat-number">28</div>
+                    <div class="stat-number" id="regular-cards">${regularCards}</div>
                     <div class="stat-label">通常計略</div>
                 </div>
             </div>
@@ -462,6 +481,22 @@ class ArchenemyGame {
         if (remainingCardsElement) {
             remainingCardsElement.textContent = this.schemes.length;
         }
+        
+        // Update stat cards based on current set
+        const totalCards = this.currentSchemeCards.length;
+        const ongoingCards = this.currentSchemeCards.filter(card => 
+            card.type_line.includes('Ongoing') || card.type_line_ja.includes('持続')
+        ).length;
+        const regularCards = totalCards - ongoingCards;
+        
+        // Update stat display elements
+        const totalCardsElement = document.getElementById('total-cards');
+        const ongoingCardsElement = document.getElementById('ongoing-cards');
+        const regularCardsElement = document.getElementById('regular-cards');
+        
+        if (totalCardsElement) totalCardsElement.textContent = totalCards;
+        if (ongoingCardsElement) ongoingCardsElement.textContent = ongoingCards;
+        if (regularCardsElement) regularCardsElement.textContent = regularCards;
     }
 
     /**
@@ -542,11 +577,11 @@ class ArchenemyGame {
     getFilteredCardsData(type) {
         const filterMap = {
             [GAME_CONSTANTS.CARD_TYPES.ONGOING]: {
-                cards: DUSKMOURN_SCHEME_CARDS.filter(card => this.isOngoingScheme(card)),
+                cards: this.currentSchemeCards.filter(card => this.isOngoingScheme(card)),
                 title: GAME_CONSTANTS.MODAL_TITLES.ONGOING_CARDS
             },
             [GAME_CONSTANTS.CARD_TYPES.REGULAR]: {
-                cards: DUSKMOURN_SCHEME_CARDS.filter(card => !this.isOngoingScheme(card)),
+                cards: this.currentSchemeCards.filter(card => !this.isOngoingScheme(card)),
                 title: GAME_CONSTANTS.MODAL_TITLES.REGULAR_CARDS
             },
             [GAME_CONSTANTS.CARD_TYPES.USED]: {
@@ -554,7 +589,7 @@ class ArchenemyGame {
                 title: GAME_CONSTANTS.MODAL_TITLES.USED_CARDS
             },
             [GAME_CONSTANTS.CARD_TYPES.ALL]: {
-                cards: DUSKMOURN_SCHEME_CARDS,
+                cards: this.currentSchemeCards,
                 title: GAME_CONSTANTS.MODAL_TITLES.ALL_CARDS
             }
         };
@@ -760,6 +795,41 @@ class ArchenemyGame {
             } else {
                 undoBtn.style.display = 'none';
                 undoBtn.disabled = true;
+            }
+        }
+    }
+
+    /**
+     * Change the current card set
+     * @param {string} setName - The name of the set to change to
+     */
+    changeSet(setName) {
+        this.currentSet = setName;
+        
+        // Update the current scheme cards based on the selected set
+        if (setName === 'duskmourn') {
+            this.currentSchemeCards = window.DUSKMOURN_SCHEME_CARDS;
+        } else if (setName === 'amonkhet') {
+            this.currentSchemeCards = window.AMONKHET_SCHEME_CARDS;
+        }
+        
+        // Reset the game with the new set
+        this.resetGame();
+        
+        // Update the header subtitle
+        this.updateHeaderSubtitle();
+    }
+
+    /**
+     * Update the header subtitle based on the current set
+     */
+    updateHeaderSubtitle() {
+        const headerSubtitle = this.getElement(GAME_CONSTANTS.ELEMENT_IDS.HEADER_SUBTITLE);
+        if (headerSubtitle) {
+            if (this.currentSet === 'duskmourn') {
+                headerSubtitle.textContent = 'Duskmourn: House of Horror - Scheme Cards';
+            } else if (this.currentSet === 'amonkhet') {
+                headerSubtitle.textContent = 'Archenemy: Nicol Bolas - Scheme Cards';
             }
         }
     }

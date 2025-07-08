@@ -47,6 +47,53 @@ body {
     gap: 15px;
     margin-bottom: 30px;
     flex-wrap: wrap;
+    align-items: center;
+}
+
+.set-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.set-selector label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #e0e0e0;
+    white-space: nowrap;
+}
+
+.set-dropdown {
+    padding: 8px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #e0e0e0;
+    font-size: 0.9rem;
+    min-width: 200px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.set-dropdown:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.set-dropdown:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.3);
+}
+
+.set-dropdown option {
+    background: #1a1a2e;
+    color: #e0e0e0;
+    padding: 8px;
 }
 
 .btn {

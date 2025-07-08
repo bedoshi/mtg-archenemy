@@ -1087,7 +1087,7 @@ const DUSKMOURN_SCHEME_CARDS = [
 ];
 
 // カード統計情報
-const CARD_STATISTICS = {
+const DUSKMOURN_CARD_STATISTICS = {
   "total_cards": 40,
   "scheme_types": {
     "regular_scheme": 28,
@@ -1104,7 +1104,7 @@ const CARD_STATISTICS = {
 };
 
 // 追加情報
-const ADDITIONAL_INFO = {
+const DUSKMOURN_ADDITIONAL_INFO = {
   "archenemy_format": "このカードはアーチエネミー形式でのみ使用可能",
   "deck_construction": "アーチエネミー用計略デッキは20枚または最低10枚で構成",
   "card_size": "通常のMTGカード2枚分の大きさ",
@@ -1112,39 +1112,42 @@ const ADDITIONAL_INFO = {
 };
 
 // 後方互換性のため、既存のアプリケーションで使用される変数名
-const SCHEME_CARDS = DUSKMOURN_SCHEME_CARDS;
+const DUSKMOURN_SCHEME_CARDS_ALIAS = DUSKMOURN_SCHEME_CARDS;
 
 // ヘルパー関数
-function getSchemeCardByName(name) {
+function getDuskmournSchemeCardByName(name) {
   return DUSKMOURN_SCHEME_CARDS.find(card => card.name === name || card.name_ja === name);
 }
 
-function getSchemeCardsByType(type) {
+function getDuskmournSchemeCardsByType(type) {
   return DUSKMOURN_SCHEME_CARDS.filter(card => card.type_line === type || card.type_line_ja === type);
 }
 
-function getOngoingSchemes() {
+function getDuskmournOngoingSchemes() {
   return DUSKMOURN_SCHEME_CARDS.filter(card => 
     card.type_line.includes('Ongoing') || card.type_line_ja.includes('持続')
   );
 }
 
-function getRegularSchemes() {
+function getDuskmournRegularSchemes() {
   return DUSKMOURN_SCHEME_CARDS.filter(card => 
     !card.type_line.includes('Ongoing') && !card.type_line_ja.includes('持続')
   );
 }
 
+// グローバル変数として公開 (ブラウザ環境での使用のため)
+window.DUSKMOURN_SCHEME_CARDS = DUSKMOURN_SCHEME_CARDS;
+
 // ES6モジュール対応
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
     DUSKMOURN_SCHEME_CARDS,
-    SCHEME_CARDS,
-    CARD_STATISTICS,
-    ADDITIONAL_INFO,
-    getSchemeCardByName,
-    getSchemeCardsByType,
-    getOngoingSchemes,
-    getRegularSchemes
+    DUSKMOURN_SCHEME_CARDS_ALIAS,
+    DUSKMOURN_CARD_STATISTICS,
+    DUSKMOURN_ADDITIONAL_INFO,
+    getDuskmournSchemeCardByName,
+    getDuskmournSchemeCardsByType,
+    getDuskmournOngoingSchemes,
+    getDuskmournRegularSchemes
   };
 }
